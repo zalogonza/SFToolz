@@ -4,6 +4,39 @@ from simple_salesforce import Salesforce
 from datetime import datetime, timedelta
 import json
 
+# Define the path to the .env file in the $HOME/.sfdc directory
+HOME = os.path.expanduser("~")
+SFD_ENV_DIR = os.path.join(HOME, ".sfdc")
+SFD_ENV_FILE = os.path.join(SFD_ENV_DIR, ".env")
+
+# Ensure that the $HOME/.sfdc directory exists
+os.makedirs(SFD_ENV_DIR, exist_ok=True)
+
+# Function to load environment variables from the .env file in $HOME/.sfdc
+def load_env_vars():
+    if os.path.exists(SFD_ENV_FILE):
+        print("Loading environment variables from .env file in $HOME/.sfdc...")
+        with open(SFD_ENV_FILE) as env_file:
+            for line in env_file:
+                if line.strip():
+                    key, value = line.strip().split('=', 1)
+                    os.environ[key] = value
+
+# Function to save environment variables to the .env file in $HOME/.sfdc
+def save_env_vars():
+    print("Saving environment variables to .env file in $HOME/.sfdc...")
+    with open(SFD_ENV_FILE, "w") as env_file:
+        env_file.write(f"SF_USERNAME={os.getenv('SF_USERNAME')}\n")
+        env_file.write(f"SF_LOGIN_URL={os.getenv('SF_LOGIN_URL')}\n")
+        env_file.write(f"SF_ACCESS_TOKEN={os.getenv('SF_ACCESS_TOKEN')}\n")
+        env_file.write(f"SF_INSTANCE_URL={os.getenv('SF_INSTANCE_URL')}\n")
+
+# Function to delete the .env file in $HOME/.sfdc
+def delete_env_file():
+    if os.path.exists(SFD_ENV_FILE):
+        print("Deleting .env file in $HOME/.sfdc due to expired credentials...")
+        os.remove(SFD_ENV_FILE)
+
 # Function to set environment variables if not set
 def set_env_vars():
     if not os.getenv('SF_USERNAME'):
@@ -26,9 +59,13 @@ def sso_login():
         result = subprocess.run(["sfdx", "force:org:display", "--json"], capture_output=True, check=True)
         result_json = json.loads(result.stdout)
         
-        access_token = result_json['result']['accessToken']
-        instance_url = result_json['result']['instanceUrl']
-        return access_token, instance_url
+        os.environ['SF_ACCESS_TOKEN'] = result_json['result']['accessToken']
+        os.environ['SF_INSTANCE_URL'] = result_json['result']['instanceUrl']
+        
+        # Save the environment variables to the .env file in $HOME/.sfdc
+        save_env_vars()
+
+        return os.environ['SF_ACCESS_TOKEN'], os.environ['SF_INSTANCE_URL']
     except subprocess.CalledProcessError as e:
         print(f"Error during SSO login or retrieving access token: {e}")
         return None, None
@@ -80,20 +117,33 @@ def get_opportunities_closing_soon(sf):
 
 # Main function
 if __name__ == "__main__":
-    # Step 1: Set environment variables if they are not set
+    # Step 1: Load environment variables from .env file in $HOME/.sfdc if it exists
+    load_env_vars()
+
+    # Step 2: Set environment variables if they are not set
     set_env_vars()
 
-    # Step 2: Perform SSO login and retrieve access token
-    access_token, instance_url = sso_login()
+    # Step 3: Check if access token and instance URL are already set
+    access_token = os.getenv('SF_ACCESS_TOKEN')
+    instance_url = os.getenv('SF_INSTANCE_URL')
 
+    # If they are not set, perform SSO login
     if not access_token or not instance_url:
-        print("Failed to retrieve access token or instance URL. Exiting.")
-        exit(1)
+        access_token, instance_url = sso_login()
 
-    # Step 3: Connect to Salesforce using access token
+    # Step 4: Connect to Salesforce using access token
     sf = connect_to_salesforce(access_token, instance_url)
 
-    # Step 4: Retrieve opportunities closing this week and next week
+    # Step 5: If login fails, credentials are expired, delete the .env file and retry SSO login
+    if not sf:
+        print("Salesforce login failed. Credentials might be expired.")
+        delete_env_file()
+
+        # Retry SSO login and connect to Salesforce again
+        access_token, instance_url = sso_login()
+        sf = connect_to_salesforce(access_token, instance_url)
+
+    # Step 6: Retrieve opportunities closing this week and next week
     if sf:
         get_opportunities_closing_soon(sf)
 
