@@ -69,7 +69,7 @@ def get_opportunities_from_sfdc(sf):
 
     # SOQL query to get opportunities closing in the current quarter
     query = f"""
-    SELECT Name, Amount, CloseDate, ForecastCategoryName, Owner_Area__c
+    SELECT Name, Amount, CloseDate, ForecastCategoryName, Owner_Area__c, Distributor__c
     FROM Opportunity
     WHERE CloseDate >= {start_date} AND CloseDate <= {end_date}
     ORDER BY CloseDate ASC
@@ -107,10 +107,12 @@ def distribute_amount(amount, confidence_factor):
 # Function to process opportunities and generate the required output
 def process_opportunities(opportunities):
     weekly_data = defaultdict(lambda: defaultdict(float))
+    distributor_data = defaultdict(lambda: defaultdict(lambda: defaultdict(float)))
 
     # Iterate through opportunities and distribute amounts by day
     for opp in opportunities:
         area = opp['Owner_Area__c']
+        distributor = opp.get('Distributor__c', 'Unknown Distributor')  # Use 'Unknown Distributor' if missing
         name = opp['Name']
         forecast = opp['ForecastCategoryName']
         amount = opp['Amount'] if opp['Amount'] is not None else 0  # Handle None values for Amount
@@ -123,7 +125,7 @@ def process_opportunities(opportunities):
         elif forecast == 'Best Case':
             confidence_factor = 0.3
         else:
-            confidence_factor = 1
+            confidence_factor = 0
 
         # If opportunity is under $100,000, group it into "All Other"
         if amount < 100000:
@@ -137,14 +139,16 @@ def process_opportunities(opportunities):
         # Sum daily amounts and store them per week and day
         for day, daily_amount in daily_distribution.items():
             weekly_data[week_number][day] += daily_amount
+            distributor_data[week_number][distributor][day] += daily_amount
 
         # Store the weekly totals
         weekly_data[week_number]['Total'] += amount
+        distributor_data[week_number][distributor]['Total'] += amount
 
-    return weekly_data
+    return weekly_data, distributor_data
 
 # Function to generate or update the Excel file
-def generate_excel(weekly_data):
+def generate_excel(weekly_data, distributor_data):
     # Determine the filename based on the quarter
     quarter, year = get_current_quarter()
     filename = f'Sales_Closing_Q{quarter}_{year}.xlsx'
@@ -185,10 +189,22 @@ def generate_excel(weekly_data):
     # Write data to the new sheet
     df.to_excel(writer, sheet_name=sheet_name, index=False)
 
+    # Write distributor data per week
+    for week, dist_data in distributor_data.items():
+        dist_sheet_name = f"Week_{week}_Distributors"
+        dist_data_list = []
+        for distributor, dist_days in dist_data.items():
+            row = [distributor]
+            for day in ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Total']:
+                row.append(dist_days[day])
+            dist_data_list.append(row)
+
+        df_dist = pd.DataFrame(dist_data_list, columns=['Distributor', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Total'])
+        df_dist.to_excel(writer, sheet_name=dist_sheet_name, index=False)
+
     # Save the workbook
     writer._save()
-    print(f"Data written to {sheet_name} in {filename}")
-
+    print(f"Data written to {sheet_name} and distributor sheets in {filename}")
 
 # Main flow
 if __name__ == "__main__":
@@ -199,6 +215,6 @@ if __name__ == "__main__":
     # Retrieve opportunities and proceed with data processing
     if sf:
         opportunities = get_opportunities_from_sfdc(sf)
-        weekly_data = process_opportunities(opportunities)
-        generate_excel(weekly_data)
+        weekly_data, distributor_data = process_opportunities(opportunities)
+        generate_excel(weekly_data, distributor_data)
 
