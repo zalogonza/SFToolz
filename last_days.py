@@ -150,32 +150,26 @@ def distribute_amount_by_day(amount, close_date, forecast):
 
     return daily_amounts
 
-# Function to process opportunities and organize data per week, per area
+# Process opportunities by week and area, sorted by amount (from highest to lowest)
 def process_opportunities(opportunities):
     weekly_data = defaultdict(lambda: defaultdict(list))
+
+    # Sort opportunities by amount, from highest to lowest
+    opportunities = sorted(opportunities, key=lambda x: x['Amount'] if x['Amount'] is not None else 0, reverse=True)
 
     for opp in opportunities:
         week_number = datetime.strptime(opp['CloseDate'], "%Y-%m-%d").isocalendar()[1]
         area = opp['Owner_Area__c']
-        distributor = opp.get('Distributor__c', 'Unknown Distributor')
         name = opp['Name']
         amount = opp['Amount'] if opp['Amount'] is not None else 0
         forecast = opp['ForecastCategoryName']
-        stage = opp['StageName']
         close_date = datetime.strptime(opp['CloseDate'], "%Y-%m-%d")
-
-        # DEBUG: Print details about each opportunity to track if 2024-09-30 is included
-        print_err(f"Processing Opportunity: {name}, CloseDate: {opp['CloseDate']}, Week Number: {week_number}")
 
         daily_amounts = distribute_amount_by_day(amount, close_date, forecast)
 
-        # Store data grouped by Week Number, then by Area
         weekly_data[week_number][area].append({
             'Opportunity Name': name,
             'Amount': amount,
-            'Stage': stage,
-            'Forecast': forecast,
-            'Distributor': distributor,
             'CloseDate': close_date.strftime('%Y-%m-%d'),
             'Monday': daily_amounts['Monday'],
             'Tuesday': daily_amounts['Tuesday'],
@@ -188,6 +182,7 @@ def process_opportunities(opportunities):
         })
 
     return weekly_data
+
 
 # Function to generate or update the Excel file
 def generate_excel(weekly_data):
