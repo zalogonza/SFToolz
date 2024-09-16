@@ -1,3 +1,4 @@
 simple_salesforce
 pandas
 openpyxl
+dotenv

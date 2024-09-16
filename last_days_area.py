@@ -9,8 +9,8 @@ from collections import defaultdict
 import argparse
 
 # Define multiplier variables
-mult_commit = 0.7
-mult_bestcase = 0.3
+mult_commit = 0.8
+mult_bestcase = 0.2
 mult_else = 0
 
 # Function to print to STDERR for debugging
@@ -133,7 +133,7 @@ def get_opportunities_from_sfdc(sf):
 
     # Debug: Print each opportunity to track if 2024-09-30 is included
     for opp in opportunities:
-        print_err(f"Opportunity: {opp['Name']}, CloseDate: {opp['CloseDate']}")
+        print_err(f"Opportunity: {opp['Name']}, CloseDate: {opp['CloseDate']}, Area: {opp['Owner_Area__c']}, Amount: {opp['Amount']}")
     
     return opportunities
 

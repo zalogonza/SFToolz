@@ -6,15 +6,23 @@ import pandas as pd
 from openpyxl import load_workbook
 from datetime import datetime, timedelta
 from collections import defaultdict
+import argparse
 
 # Define multiplier variables
-mult_commit = 0.7
-mult_bestcase = 0.3
+mult_commit = 0.8
+mult_bestcase = 0.2
 mult_else = 0
 
 # Function to print to STDERR for debugging
 def print_err(*args, **kwargs):
     print(*args, file=sys.stderr, **kwargs)
+
+# Function to parse command-line arguments
+def parse_arguments():
+    parser = argparse.ArgumentParser(description='Process Salesforce data and filter by area.')
+    parser.add_argument('--area', type=str, required=True, help='Filter opportunities where Area contains the specified string.')
+    args = parser.parse_args()
+    return args.area
 
 # Load environment variables from the .env file in $HOME/.sfdc
 def load_env_vars():
@@ -105,15 +113,18 @@ def get_opportunities_from_sfdc(sf):
     print_err(f"End Date: {end_date.strftime('%Y-%m-%d')}")
     print_err(f"Current Quarter: {quarter}")
 
-    # SOQL query to retrieve open opportunities closing in the current quarter
+    
+    # Now you can use the 'area' variable in your SOQL query
     query = f"""
     SELECT Name, Amount, CloseDate, ForecastCategoryName, Owner_Area__c, Distributor__c, StageName, IsClosed
     FROM Opportunity
-    WHERE CloseDate >= {start_date.strftime('%Y-%m-%d')} AND CloseDate <= {end_date.strftime('%Y-%m-%d')}
+    WHERE CloseDate >= {start_date.strftime('%Y-%m-%d')} 
+    AND CloseDate <= {end_date.strftime('%Y-%m-%d')}
     AND IsClosed = False
+    AND Owner_Area__c LIKE '%{area}%'
     ORDER BY CloseDate ASC
     """
-    
+
     # Print the query to STDERR for debugging
     print_err(f"SOQL Query: {query}")
 
@@ -122,7 +133,7 @@ def get_opportunities_from_sfdc(sf):
 
     # Debug: Print each opportunity to track if 2024-09-30 is included
     for opp in opportunities:
-        print_err(f"Opportunity: {opp['Name']}, CloseDate: {opp['CloseDate']}")
+        print_err(f"Opportunity: {opp['Name']}, CloseDate: {opp['CloseDate']}, Area: {opp['Owner_Area__c']}, Amount: {opp['Amount']}")
     
     return opportunities
 
@@ -196,7 +207,7 @@ def generate_excel(weekly_data):
         writer = pd.ExcelWriter(filename, engine='openpyxl')
     
     for week_number, areas in weekly_data.items():
-        sheet_name = f"Week_{week_number}_{datetime.today().strftime('%Y-%m-%d')}"
+        sheet_name = f"{datetime.today().strftime('%Y-%m-%d-%H')}"
         data = []
 
         for area, opportunities in areas.items():
@@ -221,7 +232,7 @@ def generate_excel(weekly_data):
         df = pd.DataFrame(data, columns=[
             'Week Number', 'Area', 'Opportunity Name', 'Amount', 'CloseDate', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'Upside'
         ])
-        df.to_excel(writer, sheet_name=sheet_name, index=False)
+        df.to_excel(writer, sheet_name=sheet_name, index=False, startrow=writer.sheets[sheet_name].max_row if sheet_name in writer.sheets else 0, header=not writer.sheets)
 
     writer.close()  # Use close() instead of save()
 
@@ -230,7 +241,7 @@ def generate_excel(weekly_data):
 if __name__ == "__main__":
     load_env_vars()
     sf = connect_to_salesforce()
-
+    area = parse_arguments()
     if sf:
         opportunities = get_opportunities_from_sfdc(sf)
         weekly_data = process_opportunities(opportunities)
