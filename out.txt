@@ -1,0 +1,866 @@
+/Users/ggarcia/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Loading environment variables from .env file in $HOME/.sfdc...
+Connected to Salesforce successfully!
+Start Date: 2024-09-16
+End Date: 2024-09-30
+Current Quarter: Q3
+SOQL Query: 
+    SELECT Name, Amount, CloseDate, ForecastCategoryName, Owner_Area__c, Distributor__c, StageName, IsClosed
+    FROM Opportunity
+    WHERE CloseDate >= 2024-09-16 
+    AND CloseDate <= 2024-09-30
+    AND IsClosed = False
+    AND Owner_Area__c LIKE '%SOLA%'
+    ORDER BY CloseDate ASC
+    
+Total records retrieved: 849
+Distributor: a0N3400000LcbcZEAR, Opportunity: Q3-FY24-RNW-BOLSA-W38 SEPTIEMBRE 16, CloseDate: 2024-09-16, Area: SOLA - Colombia, Amount: 1595.0
+Distributor: a0N3400000LcbcZEAR, Opportunity: Q3-FY24-RNW CORSAN, CloseDate: 2024-09-16, Area: SOLA - Colombia, Amount: 1169.02
+Distributor: a0N3400000TSoUvEAL, Opportunity: Cirion FAC, CloseDate: 2024-09-16, Area: SOLA - Argentina, Amount: 855.6
+Distributor: a0N30000000WGdSEAW, Opportunity: POWER INJECTOR JUNJI, CloseDate: 2024-09-16, Area: SOLA - Chile, Amount: 1670.4
+Distributor: a0N8000000Ajer4EAB, Opportunity: SECURITY NETWORKING - OLMOS, CloseDate: 2024-09-16, Area: SOLA - Peru, Amount: 28782.88
+Distributor: a0N30000000WGdSEAW, Opportunity: DDXLA - AR - AT&T / IHG AR / FG61x1 + FCx1, CloseDate: 2024-09-16, Area: SOLA - Argentina, Amount: 1800.3
+Distributor: a0N2H00000VO1GxUAL, Opportunity: PY - Emotion - BFamiliar - FG-200F, CloseDate: 2024-09-16, Area: SOLA - BPUV, Amount: 19010.38
+Distributor: a0N3400000TSoY4EAL, Opportunity: TLF Uniciencia, CloseDate: 2024-09-16, Area: SOLA - Colombia, Amount: 13641.77
+Distributor: a0N30000000WGdSEAW, Opportunity: Raizen - DACAS - Access Point growth ver1, CloseDate: 2024-09-16, Area: SOLA - Argentina, Amount: 7839.0
+Distributor: a0N3400000TSoY4EAL, Opportunity: Q2-2024-Cross Sell-Hospital Militar Central (Named/G/DRD), CloseDate: 2024-09-17, Area: SOLA - Colombia, Amount: 117463.35
+Distributor: a0N3400000LcbhyEAB, Opportunity: TCCT_Municipalidad de Linares_SDWAN, CloseDate: 2024-09-17, Area: SOLA - Chile, Amount: 63092.89
+Distributor: a0N3400000TSoY4EAL, Opportunity: TIGO-MRP-SDWAN Y SDBRANCH H2, CloseDate: 2024-09-17, Area: SOLA - Colombia, Amount: 289756.08
+Distributor: a0N3400000LcbhyEAB, Opportunity: TCCT_EA TELEFONICA CHILE, CloseDate: 2024-09-17, Area: SOLA - Chile, Amount: 614465.0
+Distributor: a0N3400000TSnDvEAL, Opportunity: TCCT_Telefonica Empresas Chile_Licencias, CloseDate: 2024-09-17, Area: SOLA - Chile, Amount: 5807.5
+Distributor: a0N3400000LcbhyEAB, Opportunity: TCCT_Telefonica Empresas Chile-Clinica U. Concepcion, CloseDate: 2024-09-17, Area: SOLA - Chile, Amount: 648.0
+Distributor: a0N3400000LcbcZEAR, Opportunity: Stock -  SDWAN CLARO, CloseDate: 2024-09-17, Area: SOLA - Colombia, Amount: 25687.0
+Distributor: a0N8000000Ajer4EAB, Opportunity: Q3-FY24-RNW-MUNICIPALIDAD PROVINCIAL DE HUAMANGA, CloseDate: 2024-09-17, Area: SOLA - Peru, Amount: 1323.126
+Distributor: a0N3400000LcbceEAB, Opportunity: Q3-FY24-RNW-Ecopacking Clamshells S.A.-W38, CloseDate: 2024-09-17, Area: SOLA - Peru, Amount: 1209.72
+Distributor: a0N3400000TSoY4EAL, Opportunity: UNIVERSIDAD DEL SINU-FortiSwitch, CloseDate: 2024-09-17, Area: SOLA - Colombia, Amount: 7528.89
+Distributor: a0N3400000Psy93EAB, Opportunity: Q4-FY24-Renewal-Prime Energia Colombia SAS ver1, CloseDate: 2024-09-17, Area: SOLA - Colombia, Amount: 5463.45
+Distributor: a0N3400000LcbcjEAB, Opportunity: TCCT_Telefonica Empresas Chile_Lic, CloseDate: 2024-09-17, Area: SOLA - Chile, Amount: 8141.32
+Distributor: a0N3400000TSoY4EAL, Opportunity: Q3-FY24-RNW-TELEMED SOLUCIONES YOUTECHSUPPORT SEPTIEMBRE 17, CloseDate: 2024-09-17, Area: SOLA - Colombia, Amount: 2860.64
+Distributor: a0N3400000LcbcUEAR, Opportunity: Puntonet / Totem Humanitas / solo FG, CloseDate: 2024-09-17, Area: SOLA - Ecuador, Amount: 4989.6
+Distributor: a0N3400000LcbhyEAB, Opportunity: TCCT_Telefonica Empresas Chile_Varios, CloseDate: 2024-09-17, Area: SOLA - Chile, Amount: 2517.16
+Distributor: a0N3400000TSnDvEAL, Opportunity: IFX Networks Chile S.A.-IFX_Lic, CloseDate: 2024-09-17, Area: SOLA - Chile, Amount: 1134.0
+Distributor: a0N800000069gpPEAQ, Opportunity: Q3-FY24-RNWL-Instituto de Vivienda de Corrientes-CM-ARG1, CloseDate: 2024-09-17, Area: SOLA - Argentina, Amount: 2646.0
+Distributor: a0N3400000TSoUvEAL, Opportunity: Q3-FY24-RNWL-Allkom S.A.-BOLSA WEEK 38-CM-ARG2, CloseDate: 2024-09-17, Area: SOLA - Argentina, Amount: 2000.0
+Distributor: a0N3400000Psy93EAB, Opportunity: Q3-FY24-RNW - ECOOPSOS EPS -, CloseDate: 2024-09-17, Area: SOLA - Colombia, Amount: 1800.0
+Distributor: a0N3400000TSoUvEAL, Opportunity: Q4-FY24-RNW-SEGUROS CARACAS LIBERTY MUTUAL, CloseDate: 2024-09-17, Area: SOLA - Colombia, Amount: 5272.21
+Distributor: a0N3400000TSoY4EAL, Opportunity: CANACOL ENERGY-Switches y FAZ, CloseDate: 2024-09-17, Area: SOLA - Colombia, Amount: 28565.59
+Distributor: a0N2H00000VO1GxUAL, Opportunity: Q3-FY23-RNW-BOLSA-DIGIWEB, CloseDate: 2024-09-17, Area: SOLA - Colombia, Amount: 4500.0
+Distributor: a0N3400000LcbcjEAB, Opportunity: Q2-FY24-RNW-BolsaW38, CloseDate: 2024-09-17, Area: SOLA - Chile, Amount: 4527.0
+Distributor: a0N8000000Ajer4EAB, Opportunity: FortiEDR - Claro MSSP PAYG, CloseDate: 2024-09-17, Area: SOLA - Peru, Amount: 25000.0
+Distributor: a0N3400000Psy93EAB, Opportunity: Q3-FY24-RNW - UNIVERSIDAD COOPERATIVA DE COLOMBIA - JGZ, CloseDate: 2024-09-17, Area: SOLA - Colombia, Amount: 1800.0
+Distributor: a0N3400000TSoUvEAL, Opportunity: Q3-FY24-Renewal-HOSPITAL GARRAHAN-CM-ARG2, CloseDate: 2024-09-17, Area: SOLA - Argentina, Amount: 5560.44
+Distributor: a0N3400000TSoY4EAL, Opportunity: Q3-FY24-Renewal-Clinica Barraquer (Named/C/AMR), CloseDate: 2024-09-17, Area: SOLA - Colombia, Amount: 9334.024
+Distributor: None, Opportunity: Q3-FY24-Renewal-ESE RED DE SERVICIOS DE SALUD DE PRIMER NIVEL GUAVIARE (Named/G/RMD), CloseDate: 2024-09-17, Area: SOLA - Colombia, Amount: 1255.1
+Distributor: a0N3400000Psy93EAB, Opportunity: Q3-2024-Renewal-Ministerio de Comercio Industria y Turismo (Gov-EL) NAMED ACCOUNT, CloseDate: 2024-09-18, Area: SOLA - Colombia, Amount: 7510.6
+Distributor: a0N30000000WGdSEAW, Opportunity: SLyT/ DACAS/ PRO Adv Services y Manager, CloseDate: 2024-09-18, Area: SOLA - Argentina, Amount: 133034.26
+Distributor: a0N3400000TSoUvEAL, Opportunity: GZ // Q2-2024-Renewal-Secretaria Legal y TÃ©cnica - FGs, CloseDate: 2024-09-18, Area: SOLA - Argentina, Amount: 105686.16
+Distributor: a0N3400000Psy93EAB, Opportunity: Telefónica-XSelling-Covisian, CloseDate: 2024-09-18, Area: SOLA - Colombia, Amount: 58381.26
+Distributor: a0N3400000LcbceEAB, Opportunity: Agencia de Promoción de la Inversión Privado - PROINVERSION- FW - FWEB - FAZ, CloseDate: 2024-09-18, Area: SOLA - Peru, Amount: 42612.71
+Distributor: a0N3400000TSoY4EAL, Opportunity: Nutresa NOVAVENTA EL CARMEN-SENCINET-DACAS, CloseDate: 2024-09-18, Area: SOLA - Colombia, Amount: 4339.8
+Distributor: a0N3400000LcbcUEAR, Opportunity: Telalca-Sager del Ecuador-1xFC-10-0040F-950-02-36, CloseDate: 2024-09-18, Area: SOLA - Ecuador, Amount: 654.9
+Distributor: a0N800000067B0yEAE, Opportunity: Tigo Bolivia-Stock First order, CloseDate: 2024-09-18, Area: SOLA - BPUV, Amount: 12031.2
+Distributor: a0N2H000007lgX2UAI, Opportunity: Q3-FY24-RNW-Intertelnet | NN, CloseDate: 2024-09-18, Area: SOLA - Ecuador, Amount: 829.37
+Distributor: a0N3400000TSnEAEA1, Opportunity: Binaria-Consorcio del Pichincha-1xFC-10-F431F-247-02-12, CloseDate: 2024-09-18, Area: SOLA - Ecuador, Amount: 46.2
+Distributor: a0N3400000LcbcUEAR, Opportunity: Telalca-Exportquilsa-1x, CloseDate: 2024-09-18, Area: SOLA - Ecuador, Amount: 145.5
+Distributor: a0N2H000007lgX2UAI, Opportunity: GreenDc-GreeDC-1xNSE-EX-FTE4, CloseDate: 2024-09-18, Area: SOLA - Ecuador, Amount: 400.0
+Distributor: a0N3400000TSnEAEA1, Opportunity: Linesolutions-LineSolutions-1xFC-10-0040F-950-02-12, CloseDate: 2024-09-18, Area: SOLA - Ecuador, Amount: 242.6
+Distributor: a0N3400000TSoUvEAL, Opportunity: BOL-DIMA INFRA ver1, CloseDate: 2024-09-18, Area: SOLA - BPUV, Amount: 20066.23
+Distributor: a0N3400000LcbcUEAR, Opportunity: Telalca-PUCE Santo Domingo-1xFC-10-S124F-247-02-12, CloseDate: 2024-09-18, Area: SOLA - Ecuador, Amount: 111.7
+Distributor: a0N3400000Tx4Z2EAJ, Opportunity: Private Offer - FortiFlex - AWS - RENEWAL - VANTI S, CloseDate: 2024-09-18, Area: SOLA - Colombia, Amount: 7742.82
+Distributor: a0N3400000TSoY9EAL, Opportunity: Fiberlux - Programa Aurora - FML, CloseDate: 2024-09-18, Area: SOLA - Peru, Amount: 11872.52
+Distributor: a0N3400000TSoUvEAL, Opportunity: Ende Coporacion-FW GoIT, CloseDate: 2024-09-18, Area: SOLA - BPUV, Amount: 31474.58
+Distributor: a0N3400000LcbceEAB, Opportunity: Q2-FY24-RNW-GRUPO TRANSMERIDIAN, CloseDate: 2024-09-18, Area: SOLA - Peru, Amount: 7879.45
+Distributor: a0N3400000LcbcZEAR, Opportunity: RNWL/WIFI-ZTNA/ IDIGER/ EYC, CloseDate: 2024-09-18, Area: SOLA - Colombia, Amount: 12518.7
+Distributor: a0N3400000TSoY4EAL, Opportunity: TLF HOPA, CloseDate: 2024-09-18, Area: SOLA - Colombia, Amount: 19026.9
+Distributor: a0N3400000Psy93EAB, Opportunity: ISA- SASE POC 100 Usuarios, CloseDate: 2024-09-18, Area: SOLA - Colombia, Amount: 10000.6
+Distributor: a0N3400000LcbcZEAR, Opportunity: Q2-FY24-Cross Sell-IDIGER - INSTITUTO DISTRITAL DE GESTION DE RIESGO Y CAMBIO CLIMATICO (Named/G/JaiMej), CloseDate: 2024-09-18, Area: SOLA - Colombia, Amount: 13882.54
+Distributor: a0N3400000LcbceEAB, Opportunity: Senati - Refresh FG-601F- Sede Central, CloseDate: 2024-09-18, Area: SOLA - Peru, Amount: 27296.87
+Distributor: a0N3400000TSoY9EAL, Opportunity: Congreso de la República- FORTIMAIL - WAF - ITEM 2, CloseDate: 2024-09-18, Area: SOLA - Peru, Amount: 34720.0
+Distributor: a0N3400000LcbcZEAR, Opportunity: Q3-FY24-Renewal-HOSPITAL ROSARIO LOPEZ PUMAREJO, CloseDate: 2024-09-18, Area: SOLA - Colombia, Amount: 2716.714
+Distributor: None, Opportunity: Riopaila Castilla/OT, CloseDate: 2024-09-19, Area: SOLA - Colombia, Amount: 11310.0
+Distributor: a0N3400000LcbcZEAR, Opportunity: Grupo ISA - Intercolombia-Seguridad para Red OT - Subestaciones (segunda etapa)  Transelca, CloseDate: 2024-09-19, Area: SOLA - Colombia, Amount: 8736.6
+Distributor: a0N800000067B0yEAE, Opportunity: ALIANZA COMPAÑÍA DE SEGUROS S.A.-REplace Cisco FW, CloseDate: 2024-09-19, Area: SOLA - BPUV, Amount: 28374.1
+Distributor: a0N800000067B0yEAE, Opportunity: YPFB Transporte-PRoxsy TECLU, CloseDate: 2024-09-19, Area: SOLA - BPUV, Amount: 52212.65
+Distributor: a0N3400000Tx4Z2EAJ, Opportunity: LN | CloudPiles | Renewal + FortiWeb, CloseDate: 2024-09-19, Area: SOLA - Argentina, Amount: 4900.0
+Distributor: a0N3400000TSnEAEA1, Opportunity: Seyton - GAD MUINICIPAL PEDRO MONCAYO - FG - FSwitch, CloseDate: 2024-09-19, Area: SOLA - Ecuador, Amount: 1459.58
+Distributor: a0N3400000LcbcUEAR, Opportunity: Puntonet / Procamaronex / FGate y FSwitch, CloseDate: 2024-09-19, Area: SOLA - Ecuador, Amount: 4241.16
+Distributor: a0N3400000TSoUvEAL, Opportunity: Embotelladoras Bolivianas Unidas S.A.-WAF, CloseDate: 2024-09-19, Area: SOLA - BPUV, Amount: 11150.4
+Distributor: a0N3400000TSoY4EAL, Opportunity: ODL - FortiGSLB, CloseDate: 2024-09-19, Area: SOLA - Colombia, Amount: 1054.5
+Distributor: a0N3400000TSoUvEAL, Opportunity: 202408 EMZT - DACAS  - EDR MSSP Additional seats  (1287), CloseDate: 2024-09-19, Area: SOLA - Argentina, Amount: 1763.19
+Distributor: a0N2H00000VO1GxUAL, Opportunity: Q2-FY24-RNW-UENO, CloseDate: 2024-09-19, Area: SOLA - BPUV, Amount: 16134.97
+Distributor: a0N3400000TSoUvEAL, Opportunity: 202408 EMZT - DACAS  - SIEM MSSP  monthy (2nd year - 2nd month), CloseDate: 2024-09-19, Area: SOLA - Argentina, Amount: 749.45
+Distributor: a0N30000000WGdSEAW, Opportunity: SSeguros Nacion - ACSYS - Switches, CloseDate: 2024-09-19, Area: SOLA - Argentina, Amount: 50121.47
+Distributor: a0N3400000Tx4Z2EAJ, Opportunity: Despegar | Private Offer FortiFlex - AWS | FortiFlex, CloseDate: 2024-09-19, Area: SOLA - Argentina, Amount: 25134.39
+Distributor: a0N3400000LcbceEAB, Opportunity: SEDAPAL - SERVICIO DE COMUNICACIÓN DE DATOS DE INTERNET PARA LOS 7 CENTROS DE SERVICIOS, CloseDate: 2024-09-19, Area: SOLA - Peru, Amount: 27059.9
+Distributor: a0N3400000Psy93EAB, Opportunity: Fase 1-OT-Aguas de Manizales-FGs, CloseDate: 2024-09-19, Area: SOLA - Colombia, Amount: 16774.5
+Distributor: a0N3400000LcbceEAB, Opportunity: OSCE - INTERNET ALTERNO, CloseDate: 2024-09-19, Area: SOLA - Peru, Amount: 9372.0
+Distributor: a0N3400000TSoY4EAL, Opportunity: COMFACOR-SDWAN+FWEB+EDR+FMAIL, CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 88561.42
+Distributor: a0N3400000Psy93EAB, Opportunity: Fase 1 MFA / FAZ, CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 12052.37
+Distributor: a0N30000000WGdSEAW, Opportunity: MONTEMAR CIA.FIN. S.A.-CLoud Protecion, CloseDate: 2024-09-20, Area: SOLA - Argentina, Amount: 21149.57
+Distributor: a0N8000000Ajer4EAB, Opportunity: Ejercito del Peru - Next Gen SOC + FW + FORTIMAIL + RECON, CloseDate: 2024-09-20, Area: SOLA - Peru, Amount: 375986.55
+Distributor: a0N2H00000VO1GxUAL, Opportunity: PY _ BIGQ _ BLEND AGRISCIENCE PARAGUAY _ FG&FS&FAP&FNAC&FAZ&FEDR, CloseDate: 2024-09-20, Area: SOLA - BPUV, Amount: 134316.46
+Distributor: a0N3400000TSoY9EAL, Opportunity: GTD - INS, CloseDate: 2024-09-20, Area: SOLA - Peru, Amount: 462017.09
+Distributor: a0N800000069gpPEAQ, Opportunity: Security Logic/ COOP SAN FRANCISCO / SDWAN, CloseDate: 2024-09-20, Area: SOLA - Ecuador, Amount: 18050.01
+Distributor: a0N3400000LcbcZEAR, Opportunity: EA - Media Commerce Third Year, CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 342560.0
+Distributor: a0N800000067B0yEAE, Opportunity: PY _ TEISA _ Bristol _ FG & FS & FAZ, CloseDate: 2024-09-20, Area: SOLA - BPUV, Amount: 19711.18
+Distributor: a0N3400000TSoY4EAL, Opportunity: NGSOC, CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 166676.64
+Distributor: a0N3400000TSoUqEAL, Opportunity: Minerva Foods_Logicalis_FG Frig Carrasco, CloseDate: 2024-09-20, Area: SOLA - BPUV, Amount: 31994.72
+Distributor: a0N3400000LcbcZEAR, Opportunity: GRUPO ORTIZ - FASE 2-INFOCOMUNICACIONES - ADISTEC - SDWAN, CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 21067.2
+Distributor: a0N3400000Psy93EAB, Opportunity: Q3-FY24-New Business-SUMITEMP-FW-61F, CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 3841.25
+Distributor: a0N3400000Psy93EAB, Opportunity: Private Offer - SportLine America - SDWAN - HIIT, CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 64696.35
+Distributor: a0N3400000TSoY9EAL, Opportunity: Q4-Renewal-SmartGlobal-Defensoria del Pueblo, CloseDate: 2024-09-20, Area: SOLA - Peru, Amount: 2738.32
+Distributor: a0N3400000TSoY4EAL, Opportunity: Q3-FY24-New Business-Redes Tercer Milenio Ltda-T7 NETWORK-FG60F, CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 556.0
+Distributor: a0N3400000TSoUvEAL, Opportunity: PG // Renewal Poder Judicial de Mendoza adding 1 month, CloseDate: 2024-09-20, Area: SOLA - Argentina, Amount: 885.72
+Distributor: a0N3400000Psy93EAB, Opportunity: Q3-FY24-Cross Sell-INTEGRATIC-FG200F, CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 3769.92
+Distributor: a0N3400000LcbceEAB, Opportunity: ENEL (ORYGEN) - FW DC + Enlaces Satelitales, CloseDate: 2024-09-20, Area: SOLA - Peru, Amount: 114821.26
+Distributor: a0N3400000TSnE0EAL, Opportunity: LOCAL + STOCK - HAIZEA SICA - EXCELCOM -  FG, CloseDate: 2024-09-20, Area: SOLA - Argentina, Amount: 2254.5
+Distributor: a0N3400000TSoUvEAL, Opportunity: VE_Digitel_Greincor_HA_FG400F SEC OPS, CloseDate: 2024-09-20, Area: SOLA - BPUV, Amount: 63230.44
+Distributor: a0N3400000TSoUvEAL, Opportunity: Q3-FY24-RNWL-Allkom S.A.-BOLSA WEEK 38-CM-ARG2, CloseDate: 2024-09-20, Area: SOLA - Argentina, Amount: 10000.0
+Distributor: a0N3400000TSoY9EAL, Opportunity: Q3-FY24-RNW-BOLSA-W35, CloseDate: 2024-09-20, Area: SOLA - Peru, Amount: 394.72
+Distributor: a0N3400000TSoY4EAL, Opportunity: Q3-FY24-Cross Sell-UNION  DE TECNOLOGIA ELECTRONICA S.A.S-FG60F, CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 312.75
+Distributor: a0N800000067B0yEAE, Opportunity: VE_Destilerias Unidas_DELTA P, CloseDate: 2024-09-20, Area: SOLA - BPUV, Amount: 9568.8
+Distributor: a0N3400000LcbcjEAB, Opportunity: Marina del Sol-licencias, CloseDate: 2024-09-20, Area: SOLA - Chile, Amount: 1296.0
+Distributor: a0N3400000TSoUvEAL, Opportunity: PLUSPETROL - Voucher NSE, CloseDate: 2024-09-20, Area: SOLA - Peru, Amount: 200.0
+Distributor: a0N30000000WGdSEAW, Opportunity: (Stock) Tea_Gobierno de Tierra del Fuego-FG-200F, CloseDate: 2024-09-20, Area: SOLA - Argentina, Amount: 2494.8
+Distributor: a0N3400000LcbcZEAR, Opportunity: Q3-FY24-Cross Sell-Nixcom SAS-Cluster Pharma, CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 2149.2
+Distributor: a0N3400000NFd64EAD, Opportunity: MinSeg - Refresh FWEB y Renovacion - Acsys - Synnex, CloseDate: 2024-09-20, Area: SOLA - Argentina, Amount: 335677.98
+Distributor: a0N3400000Psy93EAB, Opportunity: Q3-FY24-New Business-PC TECNOLOGIA SAS-Optimizar Logistica-FG40F, CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 391.0
+Distributor: a0N3400000Psy93EAB, Opportunity: Q3_2024_Cross_Sell_Crecimiento FAZ_CGR, CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 14500.2
+Distributor: a0N3400000TSoY9EAL, Opportunity: Q3-FY24-RNW-BOLSA-W38, CloseDate: 2024-09-20, Area: SOLA - Peru, Amount: 5459.27
+Distributor: a0N800000069gpPEAQ, Opportunity: Q3-FY24-RNWL-DLS Acher LTD SA-5422322-1-CM-ARG2, CloseDate: 2024-09-20, Area: SOLA - Argentina, Amount: 293.13
+Distributor: a0N30000000WGdSEAW, Opportunity: (stock) Tea_Mercedes-Benz Argentina-FG-100F, CloseDate: 2024-09-20, Area: SOLA - Argentina, Amount: 1215.0
+Distributor: a0N3400000Psy93EAB, Opportunity: GRUPO AGORA - GRASCO- SDWAN - EYC, CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 56968.52
+Distributor: a0N30000000WGdSEAW, Opportunity: (Stock) Tea_Bodegas Chandon S.A.-FG-200F, CloseDate: 2024-09-20, Area: SOLA - Argentina, Amount: 2494.8
+Distributor: a0N3400000TSoUvEAL, Opportunity: Q3-FY24-RNWL-FYO - Futuros y Opciones SA-FortiSwitches-CM-ARG1, CloseDate: 2024-09-20, Area: SOLA - Argentina, Amount: 1097.86
+Distributor: a0N3400000TSoUvEAL, Opportunity: Q3-FY24-RNWL-Alpha 2000-CM-ARG2, CloseDate: 2024-09-20, Area: SOLA - Argentina, Amount: 218.3
+Distributor: a0N2H000007lgX7UAI, Opportunity: Q3-FY24-New Business-Fundación Cristovision-SDBRANCH, CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 1066.5
+Distributor: a0N3400000LcbcZEAR, Opportunity: Q3-FY24-Cross Sell-DISTRIBUIDORA DE SOFTWARE Y MOVILIDAD S.A.S.-Centro comerciall Los Molinos-FAP, CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 464.4
+Distributor: a0N3400000TSoY9EAL, Opportunity: Q3-FY24-CROSS SELL-Thalos Technologies S.A.C.-NFR, CloseDate: 2024-09-20, Area: SOLA - Peru, Amount: 2295.0
+Distributor: a0N3400000TSoY9EAL, Opportunity: Entel - Santiago Rodriguez Banda - Secure SDWAN, CloseDate: 2024-09-20, Area: SOLA - Peru, Amount: 10722.0
+Distributor: a0N2H000007lgX7UAI, Opportunity: COOPETROL- - EFEYCE - SWITCHES STOCK, CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 1788.48
+Distributor: a0N2H00000VO1GxUAL, Opportunity: Q3-FY24-RNW-BOLSA-NETLOGIC, CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 8000.0
+Distributor: a0N3400000LcbceEAB, Opportunity: Antamina- Mineroducto x 10FG-40F SELL_OUT, CloseDate: 2024-09-20, Area: SOLA - Peru, Amount: 3564.0
+Distributor: a0N3400000Psy93EAB, Opportunity: OT-Puerto Antioquia-Netmask-OT Network, CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 10064.1
+Distributor: a0N3400000TSoUvEAL, Opportunity: Q3-FY24-RNWL-Allkom S.A.-BOLSA WEEK 38-CM-ARG1, CloseDate: 2024-09-20, Area: SOLA - Argentina, Amount: 3876.0
+Distributor: a0N3400000LcbcZEAR, Opportunity: Universidad Popular Del Cesar-FortiMail, CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 7104.5
+Distributor: a0N3400000TSoUvEAL, Opportunity: STOCK + LOCAL - LAMB WESTON- GG + FG, CloseDate: 2024-09-20, Area: SOLA - Argentina, Amount: 2079.0
+Distributor: a0N30000000WGdSEAW, Opportunity: LOCAL - MEDIAMONKS - GG - LIC, CloseDate: 2024-09-20, Area: SOLA - Argentina, Amount: 3664.24
+Distributor: a0N3400000LcbceEAB, Opportunity: TDP - Doctor+ - FWs, CloseDate: 2024-09-20, Area: SOLA - Peru, Amount: 10575.9
+Distributor: a0N8000000Ajer4EAB, Opportunity: Q3FY24-Renewal-IBT Firewalls, CloseDate: 2024-09-20, Area: SOLA - Peru, Amount: 49104.21
+Distributor: a0N3400000NFd64EAD, Opportunity: SPF - Refresh Tecnologica - Synnex - Acsys, CloseDate: 2024-09-20, Area: SOLA - Argentina, Amount: 469864.69
+Distributor: a0N8000000Ajer4EAB, Opportunity: ISA REP - Netdatel - FGR, CloseDate: 2024-09-20, Area: SOLA - Peru, Amount: 22519.0
+Distributor: a0N3400000LcbhyEAB, Opportunity: Royal America Internacional S.A.-, CloseDate: 2024-09-20, Area: SOLA - Chile, Amount: 13444.3
+Distributor: a0N3400000Psy93EAB, Opportunity: Q3-FY24-RNW - CENTRO DE CONTROL DEL CANCER - AMR, CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 5433.435
+Distributor: a0N3400000LcbcZEAR, Opportunity: Q3-FY24-RNW - Colsalud - ISR, CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 1808.73
+Distributor: a0N3400000TSoUvEAL, Opportunity: Q3-FY24-RNWL-Intercargo S.A.C.-CM-ARG1, CloseDate: 2024-09-20, Area: SOLA - Argentina, Amount: 2381.62
+Distributor: a0N3400000TSoY9EAL, Opportunity: Q3FY24-Renewal-Grupo Okinawatec, CloseDate: 2024-09-20, Area: SOLA - Peru, Amount: 1794.5
+Distributor: a0N8000000Ajer4EAB, Opportunity: Q1-FY25-RNW-GRUPO OKINAWATEC SAC, CloseDate: 2024-09-20, Area: SOLA - Peru, Amount: 2722.29
+Distributor: a0N30000000WGdSEAW, Opportunity: Cotech - Grupo Konecta Argentina - FACs, CloseDate: 2024-09-20, Area: SOLA - Argentina, Amount: 16333.38
+Distributor: a0N3400000TSoY9EAL, Opportunity: Sell Out - Entel - Sistemas Analiticos - NFGW, CloseDate: 2024-09-20, Area: SOLA - Peru, Amount: 4709.1
+Distributor: a0N2H00000WMYUgUAP, Opportunity: Private Offer - Google - Coinsa - Deception/SandBox/DevSec - FNA, CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 57057.02
+Distributor: a0N8000000Ajer4EAB, Opportunity: Network  Security, CloseDate: 2024-09-20, Area: SOLA - Peru, Amount: 31531.88
+Distributor: a0N3400000TSoUvEAL, Opportunity: Q4-FY24-RNW-LA PAPELERA, CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 9365.35
+Distributor: a0N3400000Tx4Z2EAJ, Opportunity: Private Offer - AWS - Q4 -2024 - 300 LICEN. ZTNA LULO BANK S A-, CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 13031.55
+Distributor: a0N3400000TSnEAEA1, Opportunity: Tecnasa-Fortius-FG VM, CloseDate: 2024-09-20, Area: SOLA - Ecuador, Amount: 1674.59
+Distributor: a0N3400000TSoUvEAL, Opportunity: FT // Q3-2024-Renewal-ECOM CHACO S.A. (Named Account), CloseDate: 2024-09-20, Area: SOLA - Argentina, Amount: 59502.08
+Distributor: a0N3400000LcbceEAB, Opportunity: Q2FY24-Renewal-TDP/IPTV FG 1101E, CloseDate: 2024-09-20, Area: SOLA - Peru, Amount: 20522.14
+Distributor: a0N800000069gpPEAQ, Opportunity: Q3-FY24-RNW-OBRAS SANITARIAS MGP- CM-ARG1, CloseDate: 2024-09-20, Area: SOLA - Argentina, Amount: 4333.42
+Distributor: a0N3400000TSnE0EAL, Opportunity: Acindar - Druidics - FortiNAC, CloseDate: 2024-09-20, Area: SOLA - Argentina, Amount: 43147.21
+Distributor: a0N30000000WGdSEAW, Opportunity: LOCAL - SCANIA/Globalgate - APs (Cisco Displacement), CloseDate: 2024-09-20, Area: SOLA - Argentina, Amount: 10465.2
+Distributor: a0N3400000TSoY4EAL, Opportunity: COL- DyS- APs.- UNIVERSIDAD DE MANIZALES- APs, CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 16344.0
+Distributor: a0N3400000LcbcZEAR, Opportunity: Universidad EIA- FG, CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 47531.04
+Distributor: a0N3400000TSoY9EAL, Opportunity: Entel - Lucky - NGFW, CloseDate: 2024-09-20, Area: SOLA - Peru, Amount: 454.41
+Distributor: a0N30000000WGdSEAW, Opportunity: AGIP - Novared - Forticare to UTP  - Datacenter, CloseDate: 2024-09-20, Area: SOLA - Argentina, Amount: 119804.05
+Distributor: a0N2H000007lgX2UAI, Opportunity: TELCONET / CPMV / LANEDGE FS, CloseDate: 2024-09-20, Area: SOLA - Ecuador, Amount: 67795.73
+Distributor: a0N3400000TSnEAEA1, Opportunity: Greendc - Confiteca - FG Sd branch FAZ, CloseDate: 2024-09-20, Area: SOLA - Ecuador, Amount: 25631.39
+Distributor: a0N3400000TSoY9EAL, Opportunity: Sell Out - Entel - Grupo Lives, CloseDate: 2024-09-20, Area: SOLA - Peru, Amount: 1491.44
+Distributor: a0N800000069gpPEAQ, Opportunity: FT // Q4-2024-Renewal-Acindar S.A. (Named Account), CloseDate: 2024-09-20, Area: SOLA - Argentina, Amount: 32937.75
+Distributor: a0N3400000LcbcUEAR, Opportunity: Q3-FY24-RNW-RunRate, CloseDate: 2024-09-20, Area: SOLA - Ecuador, Amount: 4340.0
+Distributor: a0N3400000TSoY9EAL, Opportunity: DEFENSORÍA DEL PUEBLO - WAF, CloseDate: 2024-09-20, Area: SOLA - Peru, Amount: 31644.3
+Distributor: a0N3400000TSnE0EAL, Opportunity: Corrientes Telecomunicaciones SAPEM-Druidics-FG-40F, CloseDate: 2024-09-20, Area: SOLA - Argentina, Amount: 1300.87
+Distributor: a0N3400000TSoY4EAL, Opportunity: SW_Plantas/CAME/Gamma, CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 12356.45
+Distributor: a0N30000000WGdSEAW, Opportunity: SD-WAN ICBC, CloseDate: 2024-09-20, Area: SOLA - Argentina, Amount: 25601.32
+Distributor: a0N2H000007lgX7UAI, Opportunity: Fotitoken -Audifarma S.A-, CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 4582.8
+Distributor: a0N3400000Psy93EAB, Opportunity: IFX- Firewall Ufinet Colombia-, CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 34128.0
+Distributor: a0N30000000WGdSEAW, Opportunity: Belgrano Cargas | Telecom | Fortigates, CloseDate: 2024-09-20, Area: SOLA - Argentina, Amount: 28076.29
+Distributor: a0N3400000TSoUvEAL, Opportunity: Q3-FY24-RNW-VENEMERGENCIA, CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 3605.76
+Distributor: a0N3400000TSoY4EAL, Opportunity: Q2-FY24-New Business-Subred Integrada de Servicios de Salud Centro Oriente E.S.E.-FG400F, CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 11180.23
+Distributor: a0N3400000TSoY4EAL, Opportunity: Q3-FY24-RNW BOLSA  SEPT WEEK12, CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 9000.0
+Distributor: a0N3400000TSoUvEAL, Opportunity: Q3-FY24-RNW-PIL ANDINA, CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 3283.22
+Distributor: a0N3400000LcbceEAB, Opportunity: SILHER CORP - Bafing - FGs, CloseDate: 2024-09-20, Area: SOLA - Peru, Amount: 31502.75
+Distributor: a0N3400000LcbcZEAR, Opportunity: Q3-FY24-RNW-BOLSA-W38 SEPTIEMBRE, CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 6229.0
+Distributor: a0N3400000Psy93EAB, Opportunity: Q2-FY24-RNW-Primax Colombia S.A. FG500E (Named/C/COB), CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 4586.666
+Distributor: a0N2H00000WMYUgUAP, Opportunity: Newsan | Algeiba | ZTNA, CloseDate: 2024-09-20, Area: SOLA - Argentina, Amount: 26400.55
+Distributor: a0N3400000TSoY4EAL, Opportunity: Q3-FY24-Renewal-Grupo Exito (Named/E/ILP), CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 283.14
+Distributor: a0N3400000LcbcZEAR, Opportunity: Q3-FY24-Renewal-Dialnet de Colombia S.A. E.S.P., CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 22632.43
+Distributor: a0N800000069gpPEAQ, Opportunity: eMZT- Bioetanol Rio Cuarto S.A.- Switches, CloseDate: 2024-09-20, Area: SOLA - Argentina, Amount: 22143.68
+Distributor: a0N3400000TSoUqEAL, Opportunity: Q3-FY24-RNW-BOLSA-BISNEXT, CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 6000.0
+Distributor: a0N3400000Psy93EAB, Opportunity: Q3-FY24-Renewal-Sucroal S.A. ( Commercial) JG, CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 2597.68
+Distributor: a0N3400000LcbceEAB, Opportunity: SPSA-Tiendas Mass-CPE 17 puntos Entel, CloseDate: 2024-09-20, Area: SOLA - Peru, Amount: 5198.6
+Distributor: a0N30000000WGdSEAW, Opportunity: STOCK + LOCAL - RAMONDA MOTORS- EXCELCOM- FG + FAP + CLIENT, CloseDate: 2024-09-20, Area: SOLA - Argentina, Amount: 4224.0
+Distributor: a0N2H000007lgX7UAI, Opportunity: Q3-FY24-RNW-TOUR VACATION HOTEL AZUL (Named/E/JPM) MIGUEL MARIN, CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 527.26
+Distributor: a0N3400000TSoY4EAL, Opportunity: Q3-FY24-Renewal-Gomez Cajiao Asociados, CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 5821.57
+Distributor: a0N3400000LcbcZEAR, Opportunity: Q3-FY24-Renewal-ITCOL SAS, CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 1260.0
+Distributor: a0N3400000LcbcZEAR, Opportunity: Q3-FY24-Renewal-Sonria (Named/C/AMR), CloseDate: 2024-09-20, Area: SOLA - Colombia, Amount: 2412.81
+Distributor: None, Opportunity: Q3-FY24-Renewal-Empresas Publicas de Cundinamarca S.A. E.S.P., CloseDate: 2024-09-21, Area: SOLA - Colombia, Amount: 1891.59
+Distributor: a0N2H00000WHVkxUAH, Opportunity: Q3-2024-Renewal-Ministerio del Interior (Named Account), CloseDate: 2024-09-23, Area: SOLA - BPUV, Amount: 132849.31
+Distributor: a0N3400000LcbcZEAR, Opportunity: Claro-GCO-SDWAN, CloseDate: 2024-09-23, Area: SOLA - Colombia, Amount: 72457.64
+Distributor: a0N3400000TSoY4EAL, Opportunity: Sonda/Sonda/Actualizacion Infra Interna, CloseDate: 2024-09-23, Area: SOLA - Colombia, Amount: 35868.64
+Distributor: a0N3400000LcbhyEAB, Opportunity: Pucobre- El espino SW+AP-Tecnovoa-Dacas, CloseDate: 2024-09-23, Area: SOLA - Chile, Amount: 11635.82
+Distributor: a0N3400000LcbcZEAR, Opportunity: MC- COMFANDI-ZTNA, CloseDate: 2024-09-23, Area: SOLA - Colombia, Amount: 149171.22
+Distributor: None, Opportunity: STOCK Comfandi-SDWAN MEDIA COMMERCE, CloseDate: 2024-09-23, Area: SOLA - Colombia, Amount: 714.0
+Distributor: a0N3400000TSnDvEAL, Opportunity: PS -SAVAL, CloseDate: 2024-09-23, Area: SOLA - Chile, Amount: 11616.0
+Distributor: a0N3400000LcbcZEAR, Opportunity: PERMODA  S.A.-FG-60 STOCK, CloseDate: 2024-09-23, Area: SOLA - Colombia, Amount: 4691.25
+Distributor: a0N30000000WGdSEAW, Opportunity: CS - BRA - FAZ & FMG, CloseDate: 2024-09-23, Area: SOLA - Argentina, Amount: 13391.83
+Distributor: a0N3400000TSnDvEAL, Opportunity: Q1-FY25-RNW-Minera Collahuasi (36m), CloseDate: 2024-09-23, Area: SOLA - Chile, Amount: 31686.22
+Distributor: a0N3400000TSnE0EAL, Opportunity: AMX Argentina - DRP Project, CloseDate: 2024-09-23, Area: SOLA - Argentina, Amount: 204049.79
+Distributor: a0N3400000TSoUvEAL, Opportunity: BCP - FortiGates CloudFactory, CloseDate: 2024-09-23, Area: SOLA - BPUV, Amount: 11039.51
+Distributor: a0N2H00000VO1GxUAL, Opportunity: PY - Technoma - ITTI - FG-120G, CloseDate: 2024-09-23, Area: SOLA - BPUV, Amount: 5477.82
+Distributor: a0N3400000TSoUvEAL, Opportunity: Rappi - ISSecurity - FTM - Expansion II, CloseDate: 2024-09-23, Area: SOLA - Argentina, Amount: 9839.96
+Distributor: a0N3400000Psy93EAB, Opportunity: Claro GiLAN, CloseDate: 2024-09-23, Area: SOLA - Colombia, Amount: 79935.74
+Distributor: a0N3400000LcbcUEAR, Opportunity: New_SASE_EC_SP-Ufinet/Sell To/FClient ZTNA, FAuth, FToken, CloseDate: 2024-09-23, Area: SOLA - Ecuador, Amount: 88113.6
+Distributor: a0N3400000TSoUvEAL, Opportunity: Q3-2024-Renewal-SEGIP, CloseDate: 2024-09-23, Area: SOLA - BPUV, Amount: 10933.0
+Distributor: a0N800000067B0yEAE, Opportunity: Q2-2024-NEW BUSINESS CARVAJAL MEXICO-ECUADOR-PERU., CloseDate: 2024-09-23, Area: SOLA - Colombia, Amount: 35980.12
+Distributor: a0N3400000TSoY4EAL, Opportunity: CLIINCA MAR CARIBE-FASE 1 (FG+WAF+FMAIL), CloseDate: 2024-09-23, Area: SOLA - Colombia, Amount: 27557.16
+Distributor: a0N3400000TSoY4EAL, Opportunity: Q4-2024-Renewal-Asmet Salud EPS (Named/E/ILP), CloseDate: 2024-09-23, Area: SOLA - Colombia, Amount: 7886.8
+Distributor: a0N3400000TSoY4EAL, Opportunity: UniMagdalena-FG-HA, CloseDate: 2024-09-23, Area: SOLA - Colombia, Amount: 41850.0
+Distributor: a0N2H000007lgX7UAI, Opportunity: Fswtich/Gensa/IngTelematica, CloseDate: 2024-09-23, Area: SOLA - Colombia, Amount: 3805.13
+Distributor: a0N3400000LcbhyEAB, Opportunity: Cenizas-switch +sfp mina- Advisers- Dacas, CloseDate: 2024-09-23, Area: SOLA - Chile, Amount: 1119.6
+Distributor: None, Opportunity: Q3-FY24-Renewal-Coac. COOPAD, CloseDate: 2024-09-23, Area: SOLA - Ecuador, Amount: 2226.0
+Distributor: a0N3400000TSoY4EAL, Opportunity: Gases del Llano ZTNA, Securtiy Device, CloseDate: 2024-09-23, Area: SOLA - Colombia, Amount: 7100.0
+Distributor: None, Opportunity: Q3-FY24-Renewal-Asociados Don Mario, CloseDate: 2024-09-23, Area: SOLA - Argentina, Amount: 1748.32
+Distributor: a0N3400000TSoUvEAL, Opportunity: Q3-FY24-Renewal-Union Personal, CloseDate: 2024-09-23, Area: SOLA - Argentina, Amount: 6133.88
+Distributor: a0N3400000TSoY9EAL, Opportunity: Q3FY24-Renewal-AMERICA TV, CloseDate: 2024-09-24, Area: SOLA - Peru, Amount: 4817.76
+Distributor: a0N3400000TSnEAEA1, Opportunity: New_SECOPS_EC_SP - Puntonet/ FMail /  Grupasa, CloseDate: 2024-09-24, Area: SOLA - Ecuador, Amount: 15286.32
+Distributor: a0N3400000LcbhyEAB, Opportunity: Masisa-GlobalData-Dacas-WIfi, CloseDate: 2024-09-24, Area: SOLA - Chile, Amount: 4152.61
+Distributor: a0N3400000LcbcUEAR, Opportunity: New_SecOps_EC_Intercommerce / Intercommerce / FMail, CloseDate: 2024-09-24, Area: SOLA - Ecuador, Amount: 4274.1
+Distributor: a0N3400000LcbcZEAR, Opportunity: FUNDACION CLINICA DEL RIO-SDBRANCH-FNAC+EPP, CloseDate: 2024-09-24, Area: SOLA - Colombia, Amount: 15567.1
+Distributor: a0N3400000TSoY4EAL, Opportunity: Telefónica FortiAuthenticator-VM Lic., CloseDate: 2024-09-24, Area: SOLA - Colombia, Amount: 8631.6
+Distributor: a0N2H000007lgX2UAI, Opportunity: Q3-FY24-RNW-ECUA 911, CloseDate: 2024-09-24, Area: SOLA - Ecuador, Amount: 1079.75
+Distributor: a0N3400000TSnEAEA1, Opportunity: Conecta - Conecta - Fcamaras uso interno, CloseDate: 2024-09-24, Area: SOLA - Ecuador, Amount: 7301.91
+Distributor: a0N800000067B0yEAE, Opportunity: DE LA PAZ - FAP_OST, CloseDate: 2024-09-24, Area: SOLA - BPUV, Amount: 9956.8
+Distributor: a0N3400000TSoUvEAL, Opportunity: Q3-FY24-RNW-BANESCO, CloseDate: 2024-09-24, Area: SOLA - BPUV, Amount: 6387.98
+Distributor: a0N3400000TSoY4EAL, Opportunity: INGENIERIA TELEMATICA/GOB.RISARALDA/FG+APs, CloseDate: 2024-09-24, Area: SOLA - Colombia, Amount: 7643.16
+Distributor: a0N3400000LcbceEAB, Opportunity: PERÚ - MGP - Marina de Guerra del Perú- Renewal - Upsell, CloseDate: 2024-09-24, Area: SOLA - Peru, Amount: 57195.66
+Distributor: a0N2H000007lgX7UAI, Opportunity: FGs  Respaldo, CloseDate: 2024-09-24, Area: SOLA - Colombia, Amount: 23975.16
+Distributor: a0N3400000Tx4Z2EAJ, Opportunity: NGFW / WAF AWS, CloseDate: 2024-09-24, Area: SOLA - Colombia, Amount: 4965.58
+Distributor: a0N8000000Aiif0EAB, Opportunity: Claro - Enterprise Agreement 2024, CloseDate: 2024-09-24, Area: SOLA - Peru, Amount: 4193397.03
+Distributor: a0N3400000LcbcUEAR, Opportunity: ENT-SEGUROS PICHINCHA NAC HA, CloseDate: 2024-09-24, Area: SOLA - Ecuador, Amount: 20564.28
+Distributor: a0N3400000Psy93EAB, Opportunity: Claro - Regulatory URL Filtering, CloseDate: 2024-09-24, Area: SOLA - Colombia, Amount: 32538.0
+Distributor: a0N3400000Psy93EAB, Opportunity: Q3-2024-RNW UDEC FG600E, CloseDate: 2024-09-24, Area: SOLA - Colombia, Amount: 10105.43
+Distributor: a0N3400000LcbcZEAR, Opportunity: COEM/BIOFLUIDOS & FARMA/Proyecto Conectividad (SW+APs), CloseDate: 2024-09-24, Area: SOLA - Colombia, Amount: 12699.85
+Distributor: a0N3400000Psy93EAB, Opportunity: Refresh + adicionales, CloseDate: 2024-09-24, Area: SOLA - Colombia, Amount: 54380.92
+Distributor: a0N3400000Psy93EAB, Opportunity: Seguridad Integrada UdeC, CloseDate: 2024-09-24, Area: SOLA - Colombia, Amount: 170440.62
+Distributor: a0N3400000Psy93EAB, Opportunity: Alcaldia de Cartagena-Equipos Stock Tigo UNE Q3, CloseDate: 2024-09-24, Area: SOLA - Colombia, Amount: 16519.32
+Distributor: a0N3400000LcbcZEAR, Opportunity: FW Perimetral Directv, CloseDate: 2024-09-24, Area: SOLA - Colombia, Amount: 33364.2
+Distributor: a0N3400000TSoY4EAL, Opportunity: Q3-FY24-Renewal-Superpolo S.A.S. (Named/C/COB), CloseDate: 2024-09-24, Area: SOLA - Colombia, Amount: 5171.87
+Distributor: a0N3400000LcbcZEAR, Opportunity: FortiNac + SW+ SDWAN + FMonitor - Heimcore, CloseDate: 2024-09-25, Area: SOLA - Colombia, Amount: 199138.28
+Distributor: a0N3400000LcbcjEAB, Opportunity: CPT_NetProvider_Adistec_Embarcaciones (SD-BRANCH), CloseDate: 2024-09-25, Area: SOLA - Chile, Amount: 18103.92
+Distributor: a0N30000000WGdSEAW, Opportunity: Claro - Koandina - Proyecto SDWAN, CloseDate: 2024-09-25, Area: SOLA - Argentina, Amount: 87033.32
+Distributor: a0N2H000007lgYjUAI, Opportunity: OT-O-I Colombia-Netmask-Colombia Peru Ecuador, CloseDate: 2024-09-25, Area: SOLA - Colombia, Amount: 23504.52
+Distributor: a0N3400000TSoUvEAL, Opportunity: Belgrano Cargas | Arquia | FortiAP, CloseDate: 2024-09-25, Area: SOLA - Argentina, Amount: 3299.4
+Distributor: a0N3400000Psy93EAB, Opportunity: ARUS/FUNDACION HOSPITAL UNIVERSIDAD DEL NORTE/SWs core, CloseDate: 2024-09-25, Area: SOLA - Colombia, Amount: 15994.96
+Distributor: a0N3400000LcbcZEAR, Opportunity: COEM/ALQUERÍA/LAN Switching Fase II - Cajicá, CloseDate: 2024-09-25, Area: SOLA - Colombia, Amount: 93419.34
+Distributor: a0N3400000TSoUqEAL, Opportunity: UY_Zonamerica_EDR Deceptor, CloseDate: 2024-09-25, Area: SOLA - BPUV, Amount: 51450.0
+Distributor: a0N3400000LcbceEAB, Opportunity: Hayduk - FortiNAC+FG+FSW - EKIS, CloseDate: 2024-09-25, Area: SOLA - Peru, Amount: 33804.94
+Distributor: a0N3400000LcbcZEAR, Opportunity: INTERACTIVO CONTACT CENTER- rearquitectura 2024, CloseDate: 2024-09-25, Area: SOLA - Colombia, Amount: 40138.94
+Distributor: a0N3400000Psy93EAB, Opportunity: TIGO-NUTRESA ACO-SDWAN 1ra, CloseDate: 2024-09-25, Area: SOLA - Colombia, Amount: 51304.61
+Distributor: a0N3400000LcbhyEAB, Opportunity: Q4-2024-Renewal-Salfa-NLT-DACAS, CloseDate: 2024-09-25, Area: SOLA - Chile, Amount: 62714.0
+Distributor: a0N3400000TSoUvEAL, Opportunity: Q3-2024-Renewal-Delapaz, CloseDate: 2024-09-25, Area: SOLA - BPUV, Amount: 9882.24
+Distributor: a0N3400000LcbcZEAR, Opportunity: Q3-2024 RFP Fortinet Summa Celsia Argos / Sencinet, CloseDate: 2024-09-25, Area: SOLA - Colombia, Amount: 74723.43
+Distributor: a0N2H000007lgX2UAI, Opportunity: Q4-FY24-RNW-FortiMail CLARO, CloseDate: 2024-09-25, Area: SOLA - Ecuador, Amount: 7613.63
+Distributor: a0N3400000LcbceEAB, Opportunity: Q3FY24-Renewal-Grupo Okinawatec Coterm, CloseDate: 2024-09-25, Area: SOLA - Peru, Amount: 3452.0
+Distributor: a0N2H00000VO1GsUAL, Opportunity: BOL-OST-CRECER IFD SDWAN, CloseDate: 2024-09-25, Area: SOLA - BPUV, Amount: 10501.81
+Distributor: a0N3400000Psy93EAB, Opportunity: La Previsora Seguros-FortiSIEM, CloseDate: 2024-09-25, Area: SOLA - Colombia, Amount: 534879.42
+Distributor: a0N3400000LcbcUEAR, Opportunity: Puntonet / Seguros Condor / SDBranch, CloseDate: 2024-09-25, Area: SOLA - Ecuador, Amount: 17427.95
+Distributor: a0N3400000LcbcZEAR, Opportunity: SF-MINTRANSPORTE-GROWDATA, CloseDate: 2024-09-25, Area: SOLA - Colombia, Amount: 481200.0
+Distributor: None, Opportunity: Q3-2024 NUTRESA-CORDALSA USA NEW 4FG, CloseDate: 2024-09-25, Area: SOLA - Colombia, Amount: 9197.136
+Distributor: a0N30000000WGdSEAW, Opportunity: (Stock y compra) teco - White Bridge service - SDWAN, CloseDate: 2024-09-25, Area: SOLA - Argentina, Amount: 8135.64
+Distributor: a0N3400000Psy93EAB, Opportunity: [XSELLTELCOS] -Cirion - MAZDA  DE  COLOMBIA S.A.S- 1era Instancia, CloseDate: 2024-09-25, Area: SOLA - Colombia, Amount: 22292.4
+Distributor: a0N3400000LcbcZEAR, Opportunity: Bancamia - STS - SOC, CloseDate: 2024-09-25, Area: SOLA - Colombia, Amount: 161087.7
+Distributor: a0N3400000LcbcZEAR, Opportunity: DATASEC-MINTRANSPORTE-UPGRADE, CloseDate: 2024-09-25, Area: SOLA - Colombia, Amount: 72381.95
+Distributor: a0N3400000Psy93EAB, Opportunity: SDWAN Cajeros - Switches - Balanceadores Davivienda - COEM, CloseDate: 2024-09-25, Area: SOLA - Colombia, Amount: 589307.68
+Distributor: a0N3400000TSoY4EAL, Opportunity: Telefonica SOC, CloseDate: 2024-09-25, Area: SOLA - Colombia, Amount: 18038.4
+Distributor: a0N30000000WGdSEAW, Opportunity: Teco_RFI FIREWALL Ciberseguridad / Arquitectura Evolución y Diseño Infraestructura y Legados _tbd, CloseDate: 2024-09-25, Area: SOLA - Argentina, Amount: 371408.37
+Distributor: a0N3400000TSoY4EAL, Opportunity: Agricola de los Llanos SAS - BIOENERGY- proyecto LAN Corporativa FASE 1, CloseDate: 2024-09-25, Area: SOLA - Colombia, Amount: 190440.57
+Distributor: a0N3400000Psy93EAB, Opportunity: CHEVYPLAN-refresh FG, CloseDate: 2024-09-25, Area: SOLA - Colombia, Amount: 44619.52
+Distributor: a0N3400000Psy93EAB, Opportunity: Networking - Switches (Palmira), CloseDate: 2024-09-25, Area: SOLA - Colombia, Amount: 33361.39
+Distributor: a0N30000000WGdSEAW, Opportunity: Atento Argentina S.A.- Refresh FG-600D, CloseDate: 2024-09-25, Area: SOLA - Argentina, Amount: 9823.96
+Distributor: a0N30000000WGdSEAW, Opportunity: LOCAL- Capsa Capex- CONSULTING - PROYECTO OT IT, CloseDate: 2024-09-25, Area: SOLA - Argentina, Amount: 27593.53
+Distributor: a0N30000000WGdSEAW, Opportunity: OLEODUCTO TRASANDINO ARGENTIA S.A. (OTA & OTC)-HEADCOMM-FW & FS, CloseDate: 2024-09-25, Area: SOLA - Argentina, Amount: 204574.27
+Distributor: a0N3400000LcbcZEAR, Opportunity: SDWAN Cloud, CloseDate: 2024-09-25, Area: SOLA - Colombia, Amount: 114537.72
+Distributor: a0N3400000Psy93EAB, Opportunity: SOMOS Internet CGNAT, CloseDate: 2024-09-25, Area: SOLA - Colombia, Amount: 22648.6
+Distributor: a0N800000067B0yEAE, Opportunity: Min Gob_Teclu_FCN_FG For Branch, CloseDate: 2024-09-25, Area: SOLA - BPUV, Amount: 152125.69
+Distributor: a0N3400000Psy93EAB, Opportunity: CORPOCESAR-SD-BRANCH, CloseDate: 2024-09-25, Area: SOLA - Colombia, Amount: 16668.72
+Distributor: a0N3400000LcbcZEAR, Opportunity: Q4-2024-CrossSell-superintendencia de Sociedades, CloseDate: 2024-09-25, Area: SOLA - Colombia, Amount: 221597.4
+Distributor: a0N3400000LcbcZEAR, Opportunity: Q2-FY24-CROSS SELL-CI2- COMPAÑIA INTERNACIONAL DE INTEGRACION FORTIMANAGER, CloseDate: 2024-09-25, Area: SOLA - Colombia, Amount: 71260.32
+Distributor: a0N3400000LcbcZEAR, Opportunity: Grupo ISA - Intercolombia-Seguridad para Red OT - Subestaciones (segunda etapa), CloseDate: 2024-09-25, Area: SOLA - Colombia, Amount: 27199.6
+Distributor: a0N3400000Psy93EAB, Opportunity: COEM/CNTS/FGs+SW+APs, CloseDate: 2024-09-25, Area: SOLA - Colombia, Amount: 7604.1
+Distributor: a0N3400000TSoUvEAL, Opportunity: Richmond | TMB Group  | OT Nueva Planta Vida, CloseDate: 2024-09-25, Area: SOLA - Argentina, Amount: 3051.0
+Distributor: a0N800000067B0yEAE, Opportunity: YPFB TRANSPORTE S.A.-MDR.TECLU, CloseDate: 2024-09-25, Area: SOLA - BPUV, Amount: 286693.0
+Distributor: a0N30000000WGdSEAW, Opportunity: BANCO CREDICOOP COOP. LTDO.- SD-WAN- Telefonica, CloseDate: 2024-09-25, Area: SOLA - Argentina, Amount: 26520.12
+Distributor: a0N30000000WGdSEAW, Opportunity: La Caja - Headcomm - FS - Branch Switching, CloseDate: 2024-09-25, Area: SOLA - Argentina, Amount: 39106.7
+Distributor: a0N3400000Psy93EAB, Opportunity: Q3-2024-Renewal- FG401, CloseDate: 2024-09-25, Area: SOLA - Colombia, Amount: 6477.75
+Distributor: a0N3400000Psy93EAB, Opportunity: ARUS/Aguas de Cartagena/FortiWeb, CloseDate: 2024-09-25, Area: SOLA - Colombia, Amount: 8997.5
+Distributor: a0N3400000TSnEAEA1, Opportunity: Q3-FY24-RNW-Grupo Vilaseca 3Y, CloseDate: 2024-09-25, Area: SOLA - Ecuador, Amount: 21178.8
+Distributor: a0N30000000WGdSEAW, Opportunity: INTERBANKING S.A.- CS - FG - New Site, CloseDate: 2024-09-25, Area: SOLA - Argentina, Amount: 22566.6
+Distributor: a0N30000000WGdSEAW, Opportunity: Codere Argentina-WiFi Bingos Phase 1 POC, CloseDate: 2024-09-25, Area: SOLA - Argentina, Amount: 934.54
+Distributor: a0N3400000LcbcZEAR, Opportunity: Claro FW SDWAN Interno, CloseDate: 2024-09-25, Area: SOLA - Colombia, Amount: 40842.0
+Distributor: a0N3400000TSoUvEAL, Opportunity: Q3-FY24-Renewal-Meli Inc (Named)-CM-ARG1, CloseDate: 2024-09-25, Area: SOLA - Argentina, Amount: 12118.97
+Distributor: a0N3400000TSoUvEAL, Opportunity: Farmacias Peruanas-switches fase 5, CloseDate: 2024-09-25, Area: SOLA - Peru, Amount: 110267.52
+Distributor: a0N3400000Psy93EAB, Opportunity: Q4-FY24-RNW-XM (Named/E/DMI) DIANA MIRA, CloseDate: 2024-09-25, Area: SOLA - Colombia, Amount: 11763.95
+Distributor: a0N800000069gpPEAQ, Opportunity: Q3-FY24-Renewal-ASOCIART ART S.A.-CMM-//FT, CloseDate: 2024-09-25, Area: SOLA - Argentina, Amount: 2443.81
+Distributor: a0N3400000LcbhyEAB, Opportunity: SALFA - FAZ, CloseDate: 2024-09-25, Area: SOLA - Chile, Amount: 13949.55
+Distributor: a0N3400000TSoY4EAL, Opportunity: Q4-FY24-Cross Sell Elite-CREG (Named/G/FGR), CloseDate: 2024-09-25, Area: SOLA - Colombia, Amount: 11228.06
+Distributor: a0N3400000Psy93EAB, Opportunity: Q3-FY24-Renewal-Fincomercio (Named/C/AMR), CloseDate: 2024-09-25, Area: SOLA - Colombia, Amount: 6115.984
+Distributor: a0N3400000Psy93EAB, Opportunity: COEM/Davivienda/Proyecto switching Oficinas, CloseDate: 2024-09-25, Area: SOLA - Colombia, Amount: 227044.0
+Distributor: a0N3400000LcbcUEAR, Opportunity: ENT-PARTNER-DANEC-FortiPAM, CloseDate: 2024-09-26, Area: SOLA - Ecuador, Amount: 7776.0
+Distributor: a0N3400000TSnE0EAL, Opportunity: Roca Argentina-Quick-SW-FG, CloseDate: 2024-09-26, Area: SOLA - Argentina, Amount: 5237.11
+Distributor: a0N3400000TSoY9EAL, Opportunity: BN - Seguridad Zonas Rurales, CloseDate: 2024-09-26, Area: SOLA - Peru, Amount: 61374.48
+Distributor: a0N3400000Tx4YxEAJ, Opportunity: NUBE-SUPERFINANCIERA, CloseDate: 2024-09-26, Area: SOLA - Colombia, Amount: 119611.36
+Distributor: a0N800000067B0yEAE, Opportunity: CALSA - Transition to Fortinet's Cloud (Standard), CloseDate: 2024-09-26, Area: SOLA - Argentina, Amount: 130650.0
+Distributor: a0N3400000TSnE0EAL, Opportunity: Carpes All SA-Quick Informatica-FG, CloseDate: 2024-09-26, Area: SOLA - Argentina, Amount: 9084.4
+Distributor: a0N3400000TSoUvEAL, Opportunity: PG // Q2-2024-Renewal Rentas de neuquen FAZ (TASA Tenant), CloseDate: 2024-09-26, Area: SOLA - Argentina, Amount: 759.39
+Distributor: a0N30000000WGdSEAW, Opportunity: Aguas y Saneamientos Mendoza SA-MENDOTEC -FW  Perimetro, CloseDate: 2024-09-26, Area: SOLA - Argentina, Amount: 59547.0
+Distributor: a0N3400000LcbcjEAB, Opportunity: ACC_CC_CL_RedSalud_Switches remplazo Aruba y Cisco ILC, CloseDate: 2024-09-26, Area: SOLA - Chile, Amount: 17154.2
+Distributor: a0N3400000Psy93EAB, Opportunity: IFX-SDWAN MITSUBISHI ELECTRIC DE COLOMBIA LIMITADA-, CloseDate: 2024-09-26, Area: SOLA - Colombia, Amount: 24029.04
+Distributor: a0N2H000007lgX7UAI, Opportunity: COL- IT&Security- INCOLMOTOS YAMAHA- FNAC, CloseDate: 2024-09-26, Area: SOLA - Colombia, Amount: 14175.86
+Distributor: a0N3400000TSnEAEA1, Opportunity: SP - Otecel / Advance Support, CloseDate: 2024-09-26, Area: SOLA - Ecuador, Amount: 84960.0
+Distributor: a0N3400000Psy93EAB, Opportunity: ?Netmask-HACEB-OT, CloseDate: 2024-09-26, Area: SOLA - Colombia, Amount: 20558.42
+Distributor: a0N3400000TSoY4EAL, Opportunity: SERVIENTREGA - NG-SOC, CloseDate: 2024-09-26, Area: SOLA - Colombia, Amount: 28207.74
+Distributor: a0N800000069gpPEAQ, Opportunity: SP - Cedia / ULEAM / FS, CloseDate: 2024-09-26, Area: SOLA - Ecuador, Amount: 16462.1
+Distributor: a0N3400000TSoUvEAL, Opportunity: YACIMIENTOS PETROLÍFEROS FISCALES BOLIVIANOS (YPFB)-Fortiweb, CloseDate: 2024-09-26, Area: SOLA - BPUV, Amount: 77260.0
+Distributor: a0N30000000WGdSEAW, Opportunity: Telecom - El Carmen SA- FG100F HA, CloseDate: 2024-09-26, Area: SOLA - Argentina, Amount: 4395.6
+Distributor: a0N3400000TSnDvEAL, Opportunity: Masisa_TBD_TBD_SDWAN, CloseDate: 2024-09-26, Area: SOLA - Chile, Amount: 18106.12
+Distributor: a0N3400000LcbcZEAR, Opportunity: DDXLA - CO/NEC - Liberty - LN - Firewall para CSC, CloseDate: 2024-09-26, Area: SOLA - Colombia, Amount: 18956.7
+Distributor: a0N3400000TSnEAEA1, Opportunity: ENT / LICENCIAS OT / VILASECA / CIRION, CloseDate: 2024-09-26, Area: SOLA - Ecuador, Amount: 8654.4
+Distributor: a0N3400000Psy93EAB, Opportunity: RENEWAL-SYAC-FORTIWEB-GAMMA, CloseDate: 2024-09-26, Area: SOLA - Colombia, Amount: 3372.44
+Distributor: a0N3400000TSnE0EAL, Opportunity: (stock y compra)TUX - VASSER S.A.- PROMO HA FG100, CloseDate: 2024-09-26, Area: SOLA - Argentina, Amount: 5188.5
+Distributor: a0N3400000LcbhyEAB, Opportunity: Atacama Minerals- Switches 1/5 - Tecnotech- Dacas, CloseDate: 2024-09-26, Area: SOLA - Chile, Amount: 3846.11
+Distributor: a0N3400000LcbcZEAR, Opportunity: Dialnet Stock Q4, CloseDate: 2024-09-26, Area: SOLA - Colombia, Amount: 20000.0
+Distributor: a0N3400000LcbcjEAB, Opportunity: KAUFMANN - FS Crecimiento vegetativo, CloseDate: 2024-09-26, Area: SOLA - Chile, Amount: 4287.38
+Distributor: a0N3400000TSoUvEAL, Opportunity: BOL-OST-VIAS BOL INFRA, CloseDate: 2024-09-26, Area: SOLA - BPUV, Amount: 21874.08
+Distributor: a0N3400000LcbcZEAR, Opportunity: EMERGIA - NSIT - SABANETA, CloseDate: 2024-09-26, Area: SOLA - Colombia, Amount: 18963.3
+Distributor: a0N30000000WGdSEAW, Opportunity: CAMUZZI - Consulting Services - Wifi Refresh & 2FA, CloseDate: 2024-09-26, Area: SOLA - Argentina, Amount: 20626.65
+Distributor: a0N30000000WGdSEAW, Opportunity: Teco - BlueMail - Client, CloseDate: 2024-09-26, Area: SOLA - Argentina, Amount: 374.4
+Distributor: a0N3400000TSnEAEA1, Opportunity: Ec_Itlligen_Itlligen_Servicios FSiem, CloseDate: 2024-09-26, Area: SOLA - Ecuador, Amount: 8953.77
+Distributor: a0N3400000TSnEAEA1, Opportunity: Tecnsa - ACESCO ECUADOR S.A. - Fswitch, CloseDate: 2024-09-26, Area: SOLA - Ecuador, Amount: 2322.75
+Distributor: a0N3400000LcbhyEAB, Opportunity: Q4-FY24-RNW-Aguas Antofagasta (Named), CloseDate: 2024-09-26, Area: SOLA - Chile, Amount: 16199.5
+Distributor: a0N3400000TSoUvEAL, Opportunity: UY_DGI_AccesoRemoto v2, CloseDate: 2024-09-26, Area: SOLA - BPUV, Amount: 67107.41
+Distributor: a0N30000000WGdSEAW, Opportunity: PY-TIGO Paraguay- FG-100F - DACAS - STOCK, CloseDate: 2024-09-26, Area: SOLA - BPUV, Amount: 28350.0
+Distributor: a0N3400000LcbcjEAB, Opportunity: Intersystems Chile-SDWAN-SyA, CloseDate: 2024-09-26, Area: SOLA - Chile, Amount: 100550.85
+Distributor: a0N3400000Psy93EAB, Opportunity: Refresh FG 400 + Adicionales, CloseDate: 2024-09-26, Area: SOLA - Colombia, Amount: 24349.08
+Distributor: a0N800000067B0yEAE, Opportunity: Tigo Bolivia-FWDC Cochabamba, CloseDate: 2024-09-26, Area: SOLA - BPUV, Amount: 130274.09
+Distributor: a0N3400000Psy93EAB, Opportunity: INFOTEP-SDBRANCH, CloseDate: 2024-09-26, Area: SOLA - Colombia, Amount: 18342.0
+Distributor: a0N2H00000WMYUgUAP, Opportunity: CALSA - Transition to Fortinet's Cloud (Private Offer), CloseDate: 2024-09-26, Area: SOLA - Argentina, Amount: 122220.97
+Distributor: a0N3400000TSoY9EAL, Opportunity: FONAFE - Upsell SIEM Agents - Kyndryl, CloseDate: 2024-09-26, Area: SOLA - Peru, Amount: 2515.8
+Distributor: a0N8000000Ajer4EAB, Opportunity: SBN_Techsi_ZTNA, CloseDate: 2024-09-26, Area: SOLA - Peru, Amount: 5301.36
+Distributor: a0N3400000TSnDvEAL, Opportunity: Banco de Chile - SDWAN OCI Valparaiso, CloseDate: 2024-09-26, Area: SOLA - Chile, Amount: 80421.0
+Distributor: a0N3400000LcbcUEAR, Opportunity: ENT-SONGA-TELCONET-FORTINAC-05082024, CloseDate: 2024-09-26, Area: SOLA - Ecuador, Amount: 17400.96
+Distributor: a0N3400000LcbcZEAR, Opportunity: Instituto de movilidad - Gintelco, CloseDate: 2024-09-26, Area: SOLA - Colombia, Amount: 15467.76
+Distributor: a0N3400000LcbcUEAR, Opportunity: ORION Security Latam - Cooperativa de Ahorro y Crédito Cotocollao - EDR, CloseDate: 2024-09-26, Area: SOLA - Ecuador, Amount: 8346.24
+Distributor: a0N3400000Psy93EAB, Opportunity: FortiAP's sede Admin, CloseDate: 2024-09-26, Area: SOLA - Colombia, Amount: 9057.51
+Distributor: a0N3400000LcbcZEAR, Opportunity: MC-EMSA-ELECTRIFICADORA DEL META SA ESP-Aprobado en segunda instancia, CloseDate: 2024-09-26, Area: SOLA - Colombia, Amount: 3049.2
+Distributor: a0N3400000TSoUvEAL, Opportunity: BTU SA-Dot 4-SW (RISK), CloseDate: 2024-09-26, Area: SOLA - Argentina, Amount: 15844.32
+Distributor: a0N3400000Psy93EAB, Opportunity: ztna, CloseDate: 2024-09-26, Area: SOLA - Colombia, Amount: 9363.6
+Distributor: a0N3400000Psy93EAB, Opportunity: IFX- Reemplazo UTM Sophos, CloseDate: 2024-09-26, Area: SOLA - Colombia, Amount: 249466.7
+Distributor: a0N3400000LcbhyEAB, Opportunity: ACC_CC_CL_KGHM Sierra Gorda-HA Fortiauth, CloseDate: 2024-09-26, Area: SOLA - Chile, Amount: 20073.01
+Distributor: a0N30000000WGdSEAW, Opportunity: EMPRESA DISTRIBUIDORA DE ELECTRICIDAD DE MENDOZA S.A.--TEA - Additional SD WAN (last purchase FG200F), CloseDate: 2024-09-26, Area: SOLA - Argentina, Amount: 8275.2
+Distributor: a0N30000000WGdSEAW, Opportunity: BANCO DE LA PAMPA-TELEFONICA-FW REFRESH, CloseDate: 2024-09-26, Area: SOLA - Argentina, Amount: 14102.0
+Distributor: a0N30000000WGdSEAW, Opportunity: BANCO DE LA PAMPA-TELEFONICA- REFRESH FG400F, CloseDate: 2024-09-26, Area: SOLA - Argentina, Amount: 15464.72
+Distributor: a0N3400000TSoUvEAL, Opportunity: Grupo Petersen - TechWise - Branch Switches, CloseDate: 2024-09-26, Area: SOLA - Argentina, Amount: 486608.8
+Distributor: a0N3400000TSnDvEAL, Opportunity: Renovacion 1101E Min Rel Exteriores, CloseDate: 2024-09-26, Area: SOLA - Chile, Amount: 42246.64
+Distributor: a0N30000000WGdSEAW, Opportunity: PY-TIGO Paraguay- FG Tigo Sports- Dacas, CloseDate: 2024-09-26, Area: SOLA - BPUV, Amount: 16949.16
+Distributor: a0N3400000Tx4Z2EAJ, Opportunity: ALMAGRARIO CLOUD Y LAN SEGURA, CloseDate: 2024-09-26, Area: SOLA - Colombia, Amount: 50703.99
+Distributor: a0N3400000TSoUvEAL, Opportunity: CSJN DAJUDECO/Systemcorp/ FW 200F, CloseDate: 2024-09-26, Area: SOLA - Argentina, Amount: 21150.74
+Distributor: a0N3400000LcbcZEAR, Opportunity: Q4-2024-Renewal-EVERTEC - PROCESA S.A.S. (Named/C/AMR), CloseDate: 2024-09-26, Area: SOLA - Colombia, Amount: 28291.64
+Distributor: a0N3400000Tx4Z2EAJ, Opportunity: Gire - CLoud Protection E/W & SDWAN - Private Offer, CloseDate: 2024-09-26, Area: SOLA - Argentina, Amount: 14184.59
+Distributor: a0N3400000TSnEAEA1, Opportunity: SP - Otecel / Fortimail MSSP, CloseDate: 2024-09-26, Area: SOLA - Ecuador, Amount: 2501.15
+Distributor: a0N3400000TSoUvEAL, Opportunity: Petroquímica Comodoro Rivadavia S.A. (PCR)- Cisco switches replacement, CloseDate: 2024-09-26, Area: SOLA - Argentina, Amount: 18030.74
+Distributor: a0N3400000Psy93EAB, Opportunity: COL- OpenGroup- BRM SAS-, CloseDate: 2024-09-26, Area: SOLA - Colombia, Amount: 5985.0
+Distributor: a0N3400000LcbcZEAR, Opportunity: SD-WAN/Sercofun/Liberty, CloseDate: 2024-09-26, Area: SOLA - Colombia, Amount: 10431.5
+Distributor: a0N30000000WGdSEAW, Opportunity: Banco de Chubut-TEA-FMG, CloseDate: 2024-09-26, Area: SOLA - Argentina, Amount: 1928.55
+Distributor: a0N3400000TSoUvEAL, Opportunity: BOL-BLUENET-BDP FMG & FWB, CloseDate: 2024-09-26, Area: SOLA - BPUV, Amount: 29489.35
+Distributor: a0N3400000LcbcUEAR, Opportunity: Ufinet / MSSP / FG-400F, CloseDate: 2024-09-26, Area: SOLA - Ecuador, Amount: 11725.3
+Distributor: a0N3400000LcbcZEAR, Opportunity: Liberty-Medipiel-Fortigate, CloseDate: 2024-09-26, Area: SOLA - Colombia, Amount: 20790.0
+Distributor: a0N800000069gpPEAQ, Opportunity: Radical - Dinardap - FG Sd branch, CloseDate: 2024-09-26, Area: SOLA - Ecuador, Amount: 58251.99
+Distributor: a0N30000000WGdSEAW, Opportunity: Teco - Gobierno de la Provincia de Cordoba - Lic p/Eq Centros Medicos, CloseDate: 2024-09-26, Area: SOLA - Argentina, Amount: 165551.4
+Distributor: a0N3400000TSnE0EAL, Opportunity: Taikki Sa- Xpears - Fortimail, CloseDate: 2024-09-26, Area: SOLA - Argentina, Amount: 3887.49
+Distributor: a0N3400000Psy93EAB, Opportunity: Q3-FY24-Renewal-ARME SA (Named/C/BRM), CloseDate: 2024-09-26, Area: SOLA - Colombia, Amount: 1856.21
+Distributor: a0N800000069gpPEAQ, Opportunity: Q3-FY24-Renewal-Banco CMF SA-CM, CloseDate: 2024-09-26, Area: SOLA - Argentina, Amount: 4881.01
+Distributor: a0N3400000LcbcjEAB, Opportunity: Bupa_SD-WAN sucursales_Claro, CloseDate: 2024-09-26, Area: SOLA - Chile, Amount: 120275.77
+Distributor: a0N800000067B0yEAE, Opportunity: Sencinet-Nutresa Centro America+ - SDWAN 1ra instancia, CloseDate: 2024-09-26, Area: SOLA - Colombia, Amount: 23781.65
+Distributor: a0N2H000007lgX7UAI, Opportunity: COL- Redsis- CLINICA LA CONCEPCION S.A.S-FG, CloseDate: 2024-09-26, Area: SOLA - Colombia, Amount: 14011.88
+Distributor: a0N3400000TSoY4EAL, Opportunity: COEM/SIMPLE/Refresh FortiClient, CloseDate: 2024-09-26, Area: SOLA - Colombia, Amount: 6955.2
+Distributor: a0N3400000TSnDvEAL, Opportunity: Q4 FY24 RNWL WOM 2024, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 209310.45
+Distributor: a0N3400000LcbcZEAR, Opportunity: Q3-2024-Renewal-Indumil - (Gov-DR) Named Account, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 18900.0
+Distributor: a0N3400000Psy93EAB, Opportunity: Q3-2024-Renewal-Telefonica, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 8000.0
+Distributor: a0N3400000LcbcjEAB, Opportunity: ClaroVTR_Belsport_YNK_SASE_Fase1_HQ, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 20979.0
+Distributor: a0N3400000LcbcjEAB, Opportunity: UMCE-Firewall, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 60194.64
+Distributor: a0N3400000TSnDvEAL, Opportunity: TCCT_FRUSAN_FMAIL_EDR, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 15905.0
+Distributor: a0N30000000WGdSEAW, Opportunity: LOCAL - SANATORIO ALLENDE - GG - SERV PROF + TAM, CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 95495.0
+Distributor: a0N3400000LcbcjEAB, Opportunity: GTD-EMIN, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 28320.6
+Distributor: a0N800000069gpPEAQ, Opportunity: ENT - UTI -TELCONET - AP _ SW UIO, CloseDate: 2024-09-27, Area: SOLA - Ecuador, Amount: 13037.0
+Distributor: a0N3400000LcbcjEAB, Opportunity: ENTEL - CAEP, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 33014.54
+Distributor: a0N3400000LcbcjEAB, Opportunity: FTC - EA ADV-FTB-Q2FY23, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 315840.0
+Distributor: a0N3400000LcbcUEAR, Opportunity: V&Pgroup_DIRECCION GENERAL DE AVIACION CIVIL-FG Refresh, CloseDate: 2024-09-27, Area: SOLA - Ecuador, Amount: 16458.17
+Distributor: a0N3400000LcbcZEAR, Opportunity: CLARO-ECOPETROL - LAN ICP, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 800194.61
+Distributor: a0N3400000TSnDvEAL, Opportunity: ENTEL - MSSP BIONET, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 17683.02
+Distributor: a0N3400000LcbcjEAB, Opportunity: TCCT_Municipalidad de Limache_ SDBRANCH, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 15456.64
+Distributor: a0N3400000LcbcjEAB, Opportunity: ClaroVTR_INXAP_CLOUD_Recon, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 25917.5
+Distributor: a0N30000000WGdSEAW, Opportunity: LOCAL - MUNICIPALIDAD DE ITUZAINGO- ZNET - FG - FASE 1, CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 17282.83
+Distributor: a0N800000069gpPEAQ, Opportunity: SP Telconet | Security M.A. | COBIS TOPAZ | ZTNA o EPP/APT, CloseDate: 2024-09-27, Area: SOLA - Ecuador, Amount: 7202.88
+Distributor: a0N2H00000VO1GsUAL, Opportunity: BBV FS Only_Adistec_BNet, CloseDate: 2024-09-27, Area: SOLA - BPUV, Amount: 1321.6
+Distributor: a0N3400000TSnDvEAL, Opportunity: TCCT_Funeraria Hogar de Cristo_SDWAN, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 12541.85
+Distributor: a0N3400000LcbceEAB, Opportunity: ACC_CC_PE - Win Empresas - Financiera Qapaq - FG + FAZ, CloseDate: 2024-09-27, Area: SOLA - Peru, Amount: 10736.0
+Distributor: a0N800000067B0yEAE, Opportunity: PY _ TEISA _ Fecoprod _ FS&FAP, CloseDate: 2024-09-27, Area: SOLA - BPUV, Amount: 11141.98
+Distributor: a0N3400000LcbcZEAR, Opportunity: Claro _ internet seguro  Q3_ adistec, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 111051.2
+Distributor: a0N3400000LcbhyEAB, Opportunity: ACC_CC_CL_Colbún SA-Segmentacion IT-OT Fase 2, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 347645.44
+Distributor: a0N3400000LcbceEAB, Opportunity: Win Empresas - APM Terminals - FG + FAD + FAZ, CloseDate: 2024-09-27, Area: SOLA - Peru, Amount: 17025.93
+Distributor: a0N3400000TSoY4EAL, Opportunity: Camara de comercio de medellin para antioquia-cirion-2 instancia, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 31386.6
+Distributor: a0N3400000LcbcjEAB, Opportunity: TCCT_PUERTO OXXAN_SDWAN, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 9747.85
+Distributor: a0N3400000TSnEAEA1, Opportunity: Partner/ VILASECA / ZTNA, CloseDate: 2024-09-27, Area: SOLA - Ecuador, Amount: 73108.31
+Distributor: a0N3400000LcbhyEAB, Opportunity: Socofar-SD-WAN-Franquiciados, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 18711.2
+Distributor: a0N30000000WGdSEAW, Opportunity: Excelcom - MUNICIPALIDAD DE TUCUMAN - Eq Centro Municipal, CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 25425.21
+Distributor: a0N2H00000WHVkxUAH, Opportunity: Q1-FY24-RNW-PODER JUDICIAL, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 7907.24
+Distributor: a0N3400000TSoY9EAL, Opportunity: TDP - SUPARO - FW, CloseDate: 2024-09-27, Area: SOLA - Peru, Amount: 17290.06
+Distributor: a0N3400000Psy93EAB, Opportunity: SERVIENTREGA SD BRANCH, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 3604.0
+Distributor: a0N3400000LcbcjEAB, Opportunity: TCCT_LABORATORIOS PRATER S.A_SDBRANCH, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 4573.8
+Distributor: a0N3400000Psy93EAB, Opportunity: CESA - PROYECTO CORE CIBERSEGURIDAD (GAMMA - STS), CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 33885.94
+Distributor: a0N2H00000WHVkxUAH, Opportunity: CFE_ACCSA_FGVM04V, CloseDate: 2024-09-27, Area: SOLA - BPUV, Amount: 7337.88
+Distributor: a0N800000069gpPEAQ, Opportunity: NEW_SASE_EC_ENT - KFC / Telconet / Fweb Fase II, CloseDate: 2024-09-27, Area: SOLA - Ecuador, Amount: 6150.0
+Distributor: a0N30000000WGdSEAW, Opportunity: LOCAL - SANATORIO ALLENDE - GG - SW UNIFICADO, CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 265281.9
+Distributor: a0N3400000TSnDvEAL, Opportunity: TCCT_I. Municipalidad de Coquimbo_FAZ, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 8771.76
+Distributor: a0N3400000LcbhyEAB, Opportunity: TCCT_COMERCIALIZADORA DE ALIMENTOS CORACHI SPA_SDWAN, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 8843.4
+Distributor: a0N8000000Ajer4EAB, Opportunity: Southern - STAT CS OT Infraestructura - Fase 01, CloseDate: 2024-09-27, Area: SOLA - Peru, Amount: 21261.8
+Distributor: a0N2H00000WHVkxUAH, Opportunity: ATENTO_Isbel_FG, CloseDate: 2024-09-27, Area: SOLA - BPUV, Amount: 17796.24
+Distributor: a0N3400000Psy93EAB, Opportunity: COL- Ecomil- DIRECCION GENERAL DE SANIDAD MILITAR (DIGSA)-, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 8120.0
+Distributor: a0N3400000LcbceEAB, Opportunity: ADC CRP, CloseDate: 2024-09-27, Area: SOLA - Peru, Amount: 25540.9
+Distributor: a0N3400000TSnDvEAL, Opportunity: Q4-FY24-RNW-Reale Group, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 4269.12
+Distributor: a0N3400000TSoUvEAL, Opportunity: LOCAL - CONSULTING - SIEM MSSP - ADDITIONAL DEVICES AGOSTO, CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 2604.69
+Distributor: a0N3400000LcbcjEAB, Opportunity: ENTEL - CORP QUINTA NORMAL, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 15078.49
+Distributor: a0N3400000TSoUvEAL, Opportunity: Q3-FY24-RNWL-Thinksoft Argentina S.A.-CM-ARG2, CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 306.5
+Distributor: a0N800000067B0yEAE, Opportunity: VE_BIMA_DELTA P_200F, CloseDate: 2024-09-27, Area: SOLA - BPUV, Amount: 8418.24
+Distributor: a0N3400000TSoY9EAL, Opportunity: Sell Out - Fiberlux - Magnavoz - NGFW, CloseDate: 2024-09-27, Area: SOLA - Peru, Amount: 462.83
+Distributor: a0N3400000TSnDvEAL, Opportunity: Recasur Ltda.-Swicthes, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 8356.24
+Distributor: a0N3400000TSoUvEAL, Opportunity: Q3-FY24-RNWL-MAXIMO BAUDUCCO S.A.C.I.F. e I.-CM-ARG2, CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 316.23
+Distributor: a0N3400000TSoUvEAL, Opportunity: Q3-FY24-RNW-INELECTRA, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 8342.33
+Distributor: a0N3400000LcbcjEAB, Opportunity: ClaroVTR_MSSP_Q3_M3_2024, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 37810.2
+Distributor: a0N3400000LcbcjEAB, Opportunity: GTD-MSSP, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 4966.0
+Distributor: a0N3400000LcbhyEAB, Opportunity: Rio King Chile-Emoney lic 60F y 80F, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 10791.3
+Distributor: a0N3400000Psy93EAB, Opportunity: universidad simon bolivar- FGs80F-ARus/Stock Synnex, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 2340.9
+Distributor: a0N3400000TSoUvEAL, Opportunity: RB // Q3-FY24-Renewal-RNP - Fweb (90-day), CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 11836.81
+Distributor: a0N3400000TSoUvEAL, Opportunity: VE_Comuniaciones Migtel_CONTEL_120G, CloseDate: 2024-09-27, Area: SOLA - BPUV, Amount: 6024.0
+Distributor: a0N3400000TSoUqEAL, Opportunity: Intendencia Maldonado_Teledata_FAZ, CloseDate: 2024-09-27, Area: SOLA - BPUV, Amount: 9430.55
+Distributor: a0N3400000LcbcUEAR, Opportunity: Q4-FY24-RNW-PUCE PONTIFICIA UNIVERSIDAD CATOLICA, CloseDate: 2024-09-27, Area: SOLA - Ecuador, Amount: 10439.63
+Distributor: a0N3400000TSoUvEAL, Opportunity: Q3-FY24-RNWL-PHS-CM-ARG2, CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 306.5
+Distributor: a0N3400000LcbcUEAR, Opportunity: Cirion/Graiman/FAz, CloseDate: 2024-09-27, Area: SOLA - Ecuador, Amount: 9137.25
+Distributor: a0N2H00000VO1GxUAL, Opportunity: PY _ SEKIURA _ La Plata _ FG-120G&FAZ&EMS, CloseDate: 2024-09-27, Area: SOLA - BPUV, Amount: 13705.18
+Distributor: a0N3400000TSnEAEA1, Opportunity: New_SecNet_EC_Telconet SP | Connectivity | MSSP Licencias, CloseDate: 2024-09-27, Area: SOLA - Ecuador, Amount: 21295.68
+Distributor: a0N3400000LcbhyEAB, Opportunity: Muni Padre Hurtado- NLT, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 4334.4
+Distributor: a0N3400000TSoUvEAL, Opportunity: Q3-FY24-RNWL-SV&A-CM-ARG2, CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 306.5
+Distributor: a0N3400000TSoY4EAL, Opportunity: Q4-FY24-Renewal-Winner Group Cirsa FG200F (Named/C/COB), CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 3433.43
+Distributor: a0N3400000TSoY4EAL, Opportunity: EA Games- Filtrado Regulatorio - Cirion- Dacas, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 21669.0
+Distributor: a0N3400000LcbcZEAR, Opportunity: Crystal UNE Conectores, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 13172.54
+Distributor: a0N3400000LcbcUEAR, Opportunity: Q3-FY24-RNW-HUMANITAS - TELCONET, CloseDate: 2024-09-27, Area: SOLA - Ecuador, Amount: 2913.26
+Distributor: a0N3400000TSoUqEAL, Opportunity: Gabanel_Conatel_FG-100F, CloseDate: 2024-09-27, Area: SOLA - BPUV, Amount: 2943.0
+Distributor: a0N2H000007lgX2UAI, Opportunity: New_SecOps_EC SP Telconet | Security | ZHM Seguros | Token, CloseDate: 2024-09-27, Area: SOLA - Ecuador, Amount: 1880.1
+Distributor: None, Opportunity: Q3 TCC-ZTNA-LIBERTY ADISTEC, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 608.4
+Distributor: a0N3400000LcbcZEAR, Opportunity: Q3_2024_Cross_Sell_SECRETARIA DISTRITAL DE AMBIENTE, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 45000.0
+Distributor: a0N3400000TSoY9EAL, Opportunity: Q3-FY24-RNW-BOLSA-W39, CloseDate: 2024-09-27, Area: SOLA - Peru, Amount: 7596.75
+Distributor: a0N3400000TSnDvEAL, Opportunity: IIA - IIA - Compra interna, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 5715.14
+Distributor: a0N3400000LcbcjEAB, Opportunity: Q3-FY24-RNW-Silica Networks, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 6056.1
+Distributor: a0N3400000TSnEAEA1, Opportunity: ENT -  Filtanet / Tipti / FG UPG UTP Fase II, CloseDate: 2024-09-27, Area: SOLA - Ecuador, Amount: 400.0
+Distributor: a0N3400000TSnDvEAL, Opportunity: Q4 FY24 RNWL (LIC FAZ) WOM 2024, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 22137.5
+Distributor: a0N3400000TSoUvEAL, Opportunity: CIrion - Fw argentina perimetro, CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 70416.78
+Distributor: a0N800000069gpPEAQ, Opportunity: Cedia / Inocar / FG 2024, CloseDate: 2024-09-27, Area: SOLA - Ecuador, Amount: 31436.48
+Distributor: a0N3400000LcbcUEAR, Opportunity: Ufinet / Ebestphone / FG, CloseDate: 2024-09-27, Area: SOLA - Ecuador, Amount: 4241.16
+Distributor: a0N3400000TSoY9EAL, Opportunity: TDP - Tracto Camiones - FWs, CloseDate: 2024-09-27, Area: SOLA - Peru, Amount: 12356.82
+Distributor: a0N3400000TSoY9EAL, Opportunity: TDP - NH HOTEL - FG-100F, CloseDate: 2024-09-27, Area: SOLA - Peru, Amount: 10354.96
+Distributor: a0N3400000TSoUvEAL, Opportunity: VE_GEF_ITELA_FAZ, CloseDate: 2024-09-27, Area: SOLA - BPUV, Amount: 38603.67
+Distributor: a0N3400000LcbceEAB, Opportunity: Q4-2023-Renewal-Perulinux-, CloseDate: 2024-09-27, Area: SOLA - Peru, Amount: 17135.92
+Distributor: a0N3400000LcbhyEAB, Opportunity: Q4-FY24-RNW-Agrosuper (Colegio Cipreses) (Named), CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 6950.7
+Distributor: a0N3400000LcbcUEAR, Opportunity: Q3-FY25-RNW-INOCAR, CloseDate: 2024-09-27, Area: SOLA - Ecuador, Amount: 16045.2
+Distributor: a0N3400000TSoUqEAL, Opportunity: Q3-FY24-RNW-BOLSA-REDINAR, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 8000.0
+Distributor: a0N3400000TSoUvEAL, Opportunity: GP // Q3-2024-Renewal- IFX tenant - CALSA FortiMail VM02, CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 10868.0
+Distributor: a0N3400000Psy93EAB, Opportunity: Q3-FY24-CROSS SELL UNION VIAL VIA PAMPLONITA, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 7031.54
+Distributor: a0N3400000TSoUvEAL, Opportunity: GP // Q3-2024-Renewal- IFX tenant - CALSA, CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 7243.75
+Distributor: a0N3400000Psy93EAB, Opportunity: DIANA CORP/COEM/OT PLANTA BQUILLA, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 60025.49
+Distributor: a0N3400000TSoY9EAL, Opportunity: Sell Out - Fiberlux - Papelera Nacional - NGFW, CloseDate: 2024-09-27, Area: SOLA - Peru, Amount: 590.75
+Distributor: a0N3400000TSoUvEAL, Opportunity: VE_ISOLA FOODS_TECNORAID, CloseDate: 2024-09-27, Area: SOLA - BPUV, Amount: 23934.2
+Distributor: a0N3400000LcbceEAB, Opportunity: Banco de Comercio- Sdwan, CloseDate: 2024-09-27, Area: SOLA - Peru, Amount: 42818.52
+Distributor: a0N8000000Ajer4EAB, Opportunity: Q3-FY25-RNW-Corporacion Khipu, CloseDate: 2024-09-27, Area: SOLA - Peru, Amount: 7403.25
+Distributor: a0N2H00000VO1GsUAL, Opportunity: BOL-OST-V. De Copacaban FSWs, CloseDate: 2024-09-27, Area: SOLA - BPUV, Amount: 41379.97
+Distributor: a0N3400000TSoUvEAL, Opportunity: Q3-FY24-RNWL-Allkom S.A.-BOLSA WEEK 39-CM, CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 12000.0
+Distributor: a0N3400000TSoY4EAL, Opportunity: Q3-2024-RNW-ADD ON-ALCALDIA DE MEDELLIN-GAMMA, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 360.48
+Distributor: a0N3400000LcbhyEAB, Opportunity: E-Contact-Forticamaras, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 10217.22
+Distributor: a0N3400000LcbhyEAB, Opportunity: Q2-FY24-Upsell-Statkraft, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 24786.0
+Distributor: a0N800000067B0yEAE, Opportunity: UCU_ACCSA_FG Central+Edge+Branches, CloseDate: 2024-09-27, Area: SOLA - BPUV, Amount: 50304.0
+Distributor: a0N2H000007lgZ3UAI, Opportunity: Q3-FY24-RNW-SINDEC, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 5055.95
+Distributor: a0N30000000WGdSEAW, Opportunity: Univ. San Martin - EMZT - CIN - Dacas, CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 4055.2
+Distributor: a0N3400000Psy93EAB, Opportunity: EDR - Fortimail, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 308820.0
+Distributor: a0N3400000TSnE0EAL, Opportunity: Nuevo Banco del Chaco-ZConsulting - FortiSASE, CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 24600.25
+Distributor: a0N2H00000WMYUgUAP, Opportunity: Genrod | Consulting Services |  MDR, CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 16867.16
+Distributor: a0N3400000TSoUqEAL, Opportunity: Equital_Bisnext_FG-400F, CloseDate: 2024-09-27, Area: SOLA - BPUV, Amount: 11408.4
+Distributor: a0N3400000TSoUqEAL, Opportunity: CAMEC_Conatel_FG120G, CloseDate: 2024-09-27, Area: SOLA - BPUV, Amount: 8880.0
+Distributor: a0N3400000TSoY4EAL, Opportunity: Q3-FY24-RNW BOLSA  SEPT WEEK13, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 17000.0
+Distributor: a0N3400000LcbcjEAB, Opportunity: Enex-WiFi Corporativo, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 3458.7
+Distributor: a0N3400000TSnDvEAL, Opportunity: ENTEL - ELECTROGAS, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 16131.88
+Distributor: a0N8000000Ajer4EAB, Opportunity: GTD - EA 2024 SET, CloseDate: 2024-09-27, Area: SOLA - Peru, Amount: 458500.0
+Distributor: a0N3400000LcbcZEAR, Opportunity: OT-CLARO-ECOPETROL, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 433254.28
+Distributor: a0N3400000LcbcZEAR, Opportunity: COL- EGlobal- SERVICONTACTO SOLUTIONS SAS-, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 17186.4
+Distributor: a0N3400000TSoY4EAL, Opportunity: Grupo Promigas/Firewalls-Sws+OT Fase 3/Telefonica Movistar, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 76194.96
+Distributor: a0N800000067B0yEAE, Opportunity: Q3-FY24-RNW-BOLSA-COACOM, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 1156.74
+Distributor: a0N800000067B0yEAE, Opportunity: VE_Protinal Proagro_IT Servicios, CloseDate: 2024-09-27, Area: SOLA - BPUV, Amount: 4981.5
+Distributor: a0N2H00000WHVkxUAH, Opportunity: Canal 4_ACCSA_FML, CloseDate: 2024-09-27, Area: SOLA - BPUV, Amount: 9709.91
+Distributor: a0N3400000LcbcjEAB, Opportunity: Q3-FY24-RNW-ITQ LATAM, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 10479.2
+Distributor: None, Opportunity: CIN - Unv NAC Nordeste - EMZT - 2x 600F + WAF, CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 28634.24
+Distributor: a0N3400000LcbcjEAB, Opportunity: Q4 FY24 RNWL UMCE (5358269-1 | Preventivo)/Innova-Net/Adistec, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 4927.52
+Distributor: a0N3400000LcbhyEAB, Opportunity: Q3 FY24 RNWL Hogar De Cristo (|5444264-1/Venc Septiembre 2024) /IT-Trust/Dacas, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 9583.41
+Distributor: a0N3400000LcbcZEAR, Opportunity: Colombia Telecomunicaciones S.A. ESP-Alpina-SDWAN, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 462356.86
+Distributor: a0N30000000WGdSEAW, Opportunity: Banco Macro - GlobalGate - Web Filter, CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 4384.45
+Distributor: a0N2H000007lgX7UAI, Opportunity: Scania Colombia S A S-sedes colombia, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 50043.1
+Distributor: a0N30000000WGdSEAW, Opportunity: ASOCIACION MUTUAL SANCOR SALUD-Telecom- Recambio Global FAP + FS (HW), CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 95696.25
+Distributor: a0N3400000TSoY4EAL, Opportunity: XSell Telcos - ETERNA S.A.- Cirion - Dacas -1era Instancia, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 16869.322
+Distributor: a0N3400000TSoUvEAL, Opportunity: Q3-FY24-RNW-UNIVERSIDAD MONTEAVILA, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 535.57
+Distributor: a0N3400000TSoUvEAL, Opportunity: Q3-FY24-RNW-BOLSA-ALPHA SYSTEM, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 5000.0
+Distributor: a0N3400000TSoUvEAL, Opportunity: Q3-FY24-RNWL-ISSUNNE-CIN-CM, CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 1458.78
+Distributor: a0N8000000Ajer4EAB, Opportunity: Claro - Fortisiem, CloseDate: 2024-09-27, Area: SOLA - Peru, Amount: 15921.2
+Distributor: a0N3400000LcbcjEAB, Opportunity: ClaroVTR_Belsport_YNK_SASE_Fase2_CD, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 20979.0
+Distributor: a0N3400000TSoY9EAL, Opportunity: Abaco_iNet_ZTNA_Token, CloseDate: 2024-09-27, Area: SOLA - Peru, Amount: 5667.84
+Distributor: a0N800000067B0yEAE, Opportunity: VE_REDIPNET_DELTAP_400F, CloseDate: 2024-09-27, Area: SOLA - BPUV, Amount: 39295.6
+Distributor: a0N800000069gpPEAQ, Opportunity: New_SecNet_SP Telconet | Network | MSSP H2_2024, CloseDate: 2024-09-27, Area: SOLA - Ecuador, Amount: 36035.07
+Distributor: a0N3400000TSoUqEAL, Opportunity: Distrito El Globo_Telefonica_FG-100F, CloseDate: 2024-09-27, Area: SOLA - BPUV, Amount: 5761.8
+Distributor: a0N3400000TSoUvEAL, Opportunity: JVB // Expired -Renewal-Raizen (corpo) -  cluster FG400E, CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 26904.33
+Distributor: a0N3400000LcbhyEAB, Opportunity: Q3-FY24-RNW-Net-Trust (Porsche), CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 7497.07
+Distributor: a0N3400000LcbceEAB, Opportunity: NEWPORT CAPITAL (GRUPO SAM) - Refresh, CloseDate: 2024-09-27, Area: SOLA - Peru, Amount: 43637.14
+Distributor: a0N3400000Psy93EAB, Opportunity: ZTNA & WAF- Cirion - Colombiana de Escenarios, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 18570.0
+Distributor: a0N3400000Psy93EAB, Opportunity: ALIANZA TEAM/CIRION/ZTNA, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 14565.6
+Distributor: a0N3400000LcbcjEAB, Opportunity: Q2-FY24-RNW-BolsaW39, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 30000.0
+Distributor: a0N3400000LcbcjEAB, Opportunity: GTD-Xsell-Copefrut, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 5722.34
+Distributor: a0N3400000Psy93EAB, Opportunity: Sociedad Portuaria Buenaventura / FORTIGATE, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 87523.44
+Distributor: a0N3400000LcbhyEAB, Opportunity: Tricot-PAM-ZTNA-NLT-DACAS-36MESES, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 66236.08
+Distributor: a0N3400000LcbceEAB, Opportunity: Sell Out - Entel - Akam - DPP, CloseDate: 2024-09-27, Area: SOLA - Peru, Amount: 504.9
+Distributor: a0N2H000007lgX2UAI, Opportunity: Telalca - Prosegur - SYNNEXFg - 40F - Fase 4, CloseDate: 2024-09-27, Area: SOLA - Ecuador, Amount: 34650.0
+Distributor: a0N30000000WGdSEAW, Opportunity: Supercanal S.A.- Consulting - SD WAN growth, CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 5886.0
+Distributor: a0N3400000TSoUvEAL, Opportunity: Q3-FY24-RNW-BOLSA-BLUENET, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 5000.0
+Distributor: a0N3400000TSoUvEAL, Opportunity: VE_Fuller_TECNORAID, CloseDate: 2024-09-27, Area: SOLA - BPUV, Amount: 42334.29
+Distributor: a0N800000067B0yEAE, Opportunity: PY _ TEISA _ EL MEJOR S.R.L. (GRUPO BAUDELET) _ FG-200F OR FG-100F, CloseDate: 2024-09-27, Area: SOLA - BPUV, Amount: 14894.85
+Distributor: a0N3400000TSoUqEAL, Opportunity: HRU_FS Hotel Carrasco, CloseDate: 2024-09-27, Area: SOLA - BPUV, Amount: 11855.99
+Distributor: a0N3400000TSoUvEAL, Opportunity: ME // Q3-2024-Renewal-Grupo Petersen (SKU for EA 1 Year) ver1, CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 632.5
+Distributor: a0N3400000TSoUvEAL, Opportunity: VE_IESA_CONTEL, CloseDate: 2024-09-27, Area: SOLA - BPUV, Amount: 18761.08
+Distributor: a0N3400000Psy93EAB, Opportunity: INVESA S.A- NAC, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 16760.19
+Distributor: a0N800000069gpPEAQ, Opportunity: Cedia / Uleam / FG Sedes, CloseDate: 2024-09-27, Area: SOLA - Ecuador, Amount: 70563.1
+Distributor: a0N3400000LcbceEAB, Opportunity: GTD - UNIVERSIDAD AUTONOMA - FG, CloseDate: 2024-09-27, Area: SOLA - Peru, Amount: 18423.0
+Distributor: a0N3400000LcbhyEAB, Opportunity: Cognita - FG 80F, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 3903.81
+Distributor: a0N30000000WGdSEAW, Opportunity: GTD-Municipalidad de Villarica, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 3906.0
+Distributor: a0N3400000TSoUvEAL, Opportunity: ME // Q3-2024-Renewal-Grupo Petersen (coterms for EA 1 Year), CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 7487.48
+Distributor: a0N3400000Psy93EAB, Opportunity: Q3-2024-Renewal-Permoda Ltda (Named/E/JPM), CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 51843.35
+Distributor: a0N8000000Ajer4EAB, Opportunity: Q4FY24-Renewal-CMAC TRUJILLO EDR, CloseDate: 2024-09-27, Area: SOLA - Peru, Amount: 60379.72
+Distributor: a0N3400000LcbcjEAB, Opportunity: Q3 FY24 RNWL ClaroVTR-EA (5186032-1)/Claro Dacas, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 12989.11
+Distributor: a0N3400000Psy93EAB, Opportunity: Q4-2024-Renewal-Efigas S.A E.S.P -Brenda, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 24373.33
+Distributor: a0N3400000LcbcZEAR, Opportunity: Q3-2024-Renewal-Aire-Media- Rosa, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 49304.87
+Distributor: a0N3400000Psy93EAB, Opportunity: Q4-2024-Renewal-COOMEVA-SONDA DE COLOMBIA, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 345557.0
+Distributor: a0N3400000LcbcjEAB, Opportunity: ClaroVTR_Belsport_WIFI_Tiendas, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 17803.5
+Distributor: a0N3400000LcbhyEAB, Opportunity: NTT_APL Logistic_Dacas_SDWan, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 25141.5
+Distributor: a0N3400000Psy93EAB, Opportunity: Vehicosta S.A.S.-SDWAN, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 6914.23
+Distributor: a0N3400000TSoY4EAL, Opportunity: OADMIN - PROYECTO LAN LAMITECH -OADMIN 2024, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 73825.6
+Distributor: a0N3400000LcbcZEAR, Opportunity: Industrias Electromecánicas Magnetrón S.A.S.-NSIT OT FASE 2, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 49761.77
+Distributor: a0N3400000LcbcjEAB, Opportunity: Enex-Conectividad-Fase2, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 176000.2
+Distributor: a0N3400000TSoUvEAL, Opportunity: PY-CELEXX-BEPSA-Switches + FMGR + FAZ, CloseDate: 2024-09-27, Area: SOLA - BPUV, Amount: 16412.11
+Distributor: a0N2H00000VO1GxUAL, Opportunity: PY _ GLOBALTI _ Tecnoedil _ Paracel location _ FG-600F&FS&FAP, CloseDate: 2024-09-27, Area: SOLA - BPUV, Amount: 23473.32
+Distributor: a0N30000000WGdSEAW, Opportunity: STOCK + LOCAL -AFA - EXING - FAP + GPI, CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 2632.7
+Distributor: a0N3400000LcbcjEAB, Opportunity: Fiordo Austral - Recambio Switches - Telsur - Adistec, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 25591.06
+Distributor: a0N3400000LcbcUEAR, Opportunity: Q3-FY24-RNW-RunRate, CloseDate: 2024-09-27, Area: SOLA - Ecuador, Amount: 848.4
+Distributor: a0N2H00000VO1GxUAL, Opportunity: PY _ EMOTION _ Bancop _ FG-40F, CloseDate: 2024-09-27, Area: SOLA - BPUV, Amount: 19243.32
+Distributor: a0N3400000LcbceEAB, Opportunity: Win Empresas - Rintisa - Tokens, CloseDate: 2024-09-27, Area: SOLA - Peru, Amount: 10369.22
+Distributor: a0N3400000LcbcjEAB, Opportunity: Tenpo-Forti SASE, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 20800.0
+Distributor: a0N30000000WGdSEAW, Opportunity: COTO - GlobalGate - FG - Backup Protection, CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 20991.46
+Distributor: a0N3400000TSoUqEAL, Opportunity: More MT_AT_FG, CloseDate: 2024-09-27, Area: SOLA - BPUV, Amount: 2943.0
+Distributor: a0N3400000LcbcjEAB, Opportunity: TCCT_Tehmcorp_SDWAN, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 6968.16
+Distributor: a0N3400000TSoUvEAL, Opportunity: VE_Thundernet_SOS_FG120G, CloseDate: 2024-09-27, Area: SOLA - BPUV, Amount: 44640.0
+Distributor: a0N3400000LcbhyEAB, Opportunity: MINSAL_HOSP MAULE, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 921428.41
+Distributor: a0N30000000WGdSEAW, Opportunity: STOCK + LOCAL - Ministerio de Infraestructura de la Pcia de Bs As- NOVARED - FG, CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 49208.4
+Distributor: a0N3400000LcbcZEAR, Opportunity: IDEA-Wexler - SOC, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 121473.98
+Distributor: a0N3400000LcbcjEAB, Opportunity: GTD-Liquimax-Grupo Lagos, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 87850.31
+Distributor: a0N30000000WGdSEAW, Opportunity: DCS - CYRE- FSwitch, CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 7573.8
+Distributor: a0N3400000LcbhyEAB, Opportunity: TCCT_Ilustre Municipalidad de Mostazal_SDWAN, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 25403.54
+Distributor: a0N3400000TSoUqEAL, Opportunity: Q3-FY23-RNW-BOLSA-TELEDATA, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 6211.24
+Distributor: a0N30000000WGdSEAW, Opportunity: Banco Comafi - Novared - APs for Brunches, CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 58410.0
+Distributor: a0N3400000TSoUqEAL, Opportunity: Mides_Teledata_FortiMail, CloseDate: 2024-09-27, Area: SOLA - BPUV, Amount: 8569.38
+Distributor: a0N30000000WGdSEAW, Opportunity: San Antonio Int - Sencinet - Dacas - Secure SDWAN, CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 9829.4
+Distributor: a0N3400000LcbhyEAB, Opportunity: Enel Chile- NTT Dacas - FAC y FTKN, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 26086.16
+Distributor: a0N3400000Psy93EAB, Opportunity: INTERRAPIDISIMO/TELEFONICA/NEW SD-WAN (W EA 133K), CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 43063.12
+Distributor: a0N3400000TSoUvEAL, Opportunity: SRB // Q4-2024-Renewal-Coto Cicsa (Tenant Telmex), CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 198270.77
+Distributor: None, Opportunity: Bolsa Electronica de Chile - NLT - FG, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 23409.0
+Distributor: a0N30000000WGdSEAW, Opportunity: STOCK + LOCAL - SANATORIO ALLENDE - GG - HW UNIFICADO con FG-1800, CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 287316.34
+Distributor: a0N3400000TSoY9EAL, Opportunity: Q3-2024-Renewal-FIBERLUX (SP), CloseDate: 2024-09-27, Area: SOLA - Peru, Amount: 1404.02
+Distributor: a0N3400000TSoY4EAL, Opportunity: Q3-2024-Renewal-FINANCIERA DE DESARROLLO NACIONAL - CONECTIVIDAD IT-ANA, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 21748.06
+Distributor: a0N3400000Psy93EAB, Opportunity: Q3-2024-Renewal-INTERNEXA (SP) TELCO, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 1200.0
+Distributor: a0N3400000Psy93EAB, Opportunity: Q4-2024-Renewal-Universidad Icesi, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 24289.34
+Distributor: a0N2H000007lgX7UAI, Opportunity: Q4-2024-Renewal-Serlefin S.A.-CAMILO, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 18341.95
+Distributor: a0N30000000WGdSEAW, Opportunity: Andreani | Newcom | FortiGates, CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 82995.7
+Distributor: a0N3400000TSnDvEAL, Opportunity: ENTEL_SOC_MAN, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 12177.06
+Distributor: a0N3400000TSnDvEAL, Opportunity: TCCT_Cementos Bio Bio_FortiToken, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 8181.6
+Distributor: a0N3400000LcbcjEAB, Opportunity: FALABELLA - REFRESH Tecnológico Campus SD-WAN -  NEW From OP 006Hr00001Jyo4gIAB, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 269037.68
+Distributor: a0N800000067B0yEAE, Opportunity: DDXLA-CO-PBS/PAYLESS COLOMBIA, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 104038.56
+Distributor: a0N3400000LcbhyEAB, Opportunity: KAUFMANN -  FortiNAC, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 98145.55
+Distributor: a0N3400000LcbcjEAB, Opportunity: Enex-Entel-WiFi fase 2, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 100272.0
+Distributor: a0N3400000TSoY4EAL, Opportunity: CORPORACIÓN COLEGIO ALEMÁN (DEUTSCHER SCHULVEREIN)-Networking, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 24194.15
+Distributor: a0N3400000LcbceEAB, Opportunity: ACC_CC_PE - Win Empresas - Pesquera Centinela - FGR + FSR, CloseDate: 2024-09-27, Area: SOLA - Peru, Amount: 33086.52
+Distributor: a0N3400000Psy93EAB, Opportunity: Sonda/Coomeva/Deceptor, CASB, FortiFlex, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 264732.66
+Distributor: a0N3400000LcbcjEAB, Opportunity: ClaroVTR_U_Valparaiso_SDWAN, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 156642.12
+Distributor: a0N2H000007lgX2UAI, Opportunity: Q2-FY24-RNW-Municipio Loja, CloseDate: 2024-09-27, Area: SOLA - Ecuador, Amount: 16044.35
+Distributor: a0N3400000TSnDvEAL, Opportunity: TCCT_Hook Chile, SA_EDR, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 42814.8
+Distributor: a0N3400000LcbcjEAB, Opportunity: ClaroVTR_Belsport_YNK_SASE_Fase3_Tiendas, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 36796.5
+Distributor: None, Opportunity: Empresa Electrica Guacolda- lic 60F, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 4785.1
+Distributor: a0N3400000LcbceEAB, Opportunity: ACC_CC_PE - Win Empresas - Británico - FWB, CloseDate: 2024-09-27, Area: SOLA - Peru, Amount: 61160.94
+Distributor: a0N3400000TSoUvEAL, Opportunity: LOCAL - CONSULTING - CONSULTING - SOC - SOAR, CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 35862.84
+Distributor: a0N800000069gpPEAQ, Opportunity: ACC_SASE_EC_ENT-Telconet / KFC / FortiTrust, CloseDate: 2024-09-27, Area: SOLA - Ecuador, Amount: 71000.0
+Distributor: a0N3400000TSnDvEAL, Opportunity: MINVU RED WAN, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 102975.42
+Distributor: a0N3400000TSoUvEAL, Opportunity: MI // Q3-2024-Renewal-GCBA-Proyecto FW - (30-day), CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 11455.51
+Distributor: a0N3400000TSoY9EAL, Opportunity: TDP - Integra Retail - FG-40F y FortiManager, CloseDate: 2024-09-27, Area: SOLA - Peru, Amount: 49964.48
+Distributor: a0N3400000TSoUqEAL, Opportunity: Resonance Uruguay_Latechco_FG80F Promo, CloseDate: 2024-09-27, Area: SOLA - BPUV, Amount: 3860.19
+Distributor: a0N30000000WGdSEAW, Opportunity: FAA - FW DC y Perimetro - NovaRed - Dacas, CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 50337.08
+Distributor: a0N30000000WGdSEAW, Opportunity: Prosegur - Telefonica - FG - ISOC Firewalls, CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 7460.5
+Distributor: a0N3400000LcbcZEAR, Opportunity: HMV Ingenieros Ltda- Secure Access Lan Edge, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 17379.62
+Distributor: a0N3400000TSnDvEAL, Opportunity: ClaroVTR_ADPRO_SDWAN, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 23413.5
+Distributor: a0N3400000TSnEAEA1, Opportunity: ENT - TeUno / La Favorita / FG SDWAN, CloseDate: 2024-09-27, Area: SOLA - Ecuador, Amount: 5071.86
+Distributor: a0N3400000LcbcZEAR, Opportunity: Q4-2024- Renewal -credibanco, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 70000.0
+Distributor: a0N3400000LcbcjEAB, Opportunity: GTD-Nat-FS, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 11445.72
+Distributor: a0N3400000LcbcjEAB, Opportunity: TTech Cyber - MultiCustomers, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 1751.22
+Distributor: a0N3400000LcbcZEAR, Opportunity: Q3-FY24-RNW-BOLSA-W39 SEPTIEMBRE, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 18557.0
+Distributor: a0N30000000WGdSEAW, Opportunity: UCA | Datco | Sede H.Britanico, CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 11128.39
+Distributor: a0N3400000LcbcjEAB, Opportunity: TCCT_FERRETERIA EL AGUILA_SDWAN, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 3208.6
+Distributor: a0N8000000Ajer4EAB, Opportunity: SCANIA - SEDE HUACHIPA, CloseDate: 2024-09-27, Area: SOLA - Peru, Amount: 66585.54
+Distributor: a0N3400000LcbcjEAB, Opportunity: ClaroVTR_DeportesSparta_SASE_EDR, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 24484.32
+Distributor: a0N3400000TSoUvEAL, Opportunity: MI // Q4-2024-Renewal-GCBA- Proyecto FW (6 months), CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 146722.02
+Distributor: a0N2H000007lgZ3UAI, Opportunity: PY _ TEISA _ Ufinet _ FG-400F ENTERPRISE, CloseDate: 2024-09-27, Area: SOLA - BPUV, Amount: 14070.36
+Distributor: a0N3400000TSoUqEAL, Opportunity: Anglo School_Teledata_FG+FAP, CloseDate: 2024-09-27, Area: SOLA - BPUV, Amount: 12529.69
+Distributor: a0N3400000LcbhyEAB, Opportunity: TCCT_FORTIVOICE_TELEFONICA, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 49521.05
+Distributor: a0N3400000Psy93EAB, Opportunity: RNW-OLIMPICA- FW INGENIERIA-FORTIMAIL-ROSA, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 14193.97
+Distributor: a0N3400000TSnDvEAL, Opportunity: Q3 FY24 RNWL Telefonica (Ferrovial | 5292055-1|5292062-1|5292048-1)/Telefonica/Synnex, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 36486.01
+Distributor: a0N3400000TSnE0EAL, Opportunity: STOCK + LOCAL - GRUPO L - DATASTAR - FG, CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 5233.78
+Distributor: a0N8000000Ajer4EAB, Opportunity: Firewall Perimetral FG-200F, CloseDate: 2024-09-27, Area: SOLA - Peru, Amount: 4706.86
+Distributor: a0N3400000TSoY9EAL, Opportunity: ACC_CC_PE - Win Empresas - Pesquera Exalmar - FGR, CloseDate: 2024-09-27, Area: SOLA - Peru, Amount: 22129.2
+Distributor: a0N3400000Psy93EAB, Opportunity: Q3-2024- Renewal Equipos centralizados-IFX Networks Colombia S.A.S-, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 23270.17
+Distributor: a0N3400000LcbcUEAR, Opportunity: ENT - UNIANDES - SISTELDATA - SWITCHES Y APS, CloseDate: 2024-09-27, Area: SOLA - Ecuador, Amount: 9858.04
+Distributor: a0N30000000WGdSEAW, Opportunity: NBSF (Petersen) / TECO / SDWAN / Fase 4, CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 10901.77
+Distributor: a0N3400000LcbhyEAB, Opportunity: Q4 FY24 RNWL Claro (Unidades SOC<5327041-1>/NTT/Dacas, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 65783.18
+Distributor: a0N3400000TSnDvEAL, Opportunity: TCCT_EMERGENT COLD CHILE_AUTHENTICATOR, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 36771.52
+Distributor: a0N3400000LcbcjEAB, Opportunity: Enex-Renewal-36MESES, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 178620.88
+Distributor: a0N3400000LcbceEAB, Opportunity: Win Empresas - Universidad Autónoma - FG, CloseDate: 2024-09-27, Area: SOLA - Peru, Amount: 6425.16
+Distributor: a0N30000000WGdSEAW, Opportunity: Grupo Petersen - Novared - EA 1 Year, CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 129875.58
+Distributor: a0N3400000Psy93EAB, Opportunity: RNW- FINANCIERA COOMULTRASAN-GAMMA-NICOLE, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 53629.04
+Distributor: a0N3400000LcbcjEAB, Opportunity: Q3-FY24-RNW-COPESA S.A, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 10500.31
+Distributor: a0N3400000LcbcZEAR, Opportunity: Fasecolda- FW REFRESH, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 8571.6
+Distributor: a0N2H00000VO1GxUAL, Opportunity: Q3-FY24-RNW-BOLSA-CIDICOM, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 8000.0
+Distributor: a0N3400000LcbcjEAB, Opportunity: Q4-FY24-RNW-Asmar (Named), CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 3702.02
+Distributor: a0N3400000TSnDvEAL, Opportunity: Valtek-, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 4588.5
+Distributor: a0N3400000TSoY9EAL, Opportunity: TDP - EL GOLF - FG-600F, CloseDate: 2024-09-27, Area: SOLA - Peru, Amount: 9027.27
+Distributor: a0N3400000LcbcjEAB, Opportunity: Q3-FY24-RNW-Saesa (Named), CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 2722.35
+Distributor: a0N3400000Psy93EAB, Opportunity: Q3-FY24-Renewal-Grupo Plastilene (Named/C/COB), CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 2583.777
+Distributor: a0N3400000LcbhyEAB, Opportunity: Q3-FY24-RNW-E-Contact, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 8268.09
+Distributor: None, Opportunity: Q3-FY24-Renewal-ARUS SMB, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 2906.05
+Distributor: a0N2H000007lgZ3UAI, Opportunity: Q3-FY24-RNW-SINDEC, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 3548.95
+Distributor: a0N3400000TSoUvEAL, Opportunity: Q3-FY24-Renewal-FARMANET S.A-CM-ARG2, CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 5433.12
+Distributor: a0N3400000TSoUvEAL, Opportunity: Q3-FY24-Renewal-BORAX ARGENTINA S.A., CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 3320.72
+Distributor: a0N3400000TSoUvEAL, Opportunity: Q3-FY24-Renewal-Renatre-CM-ARG2, CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 9838.87
+Distributor: a0N3400000TSoUqEAL, Opportunity: Q3-FY24-Renewal-AT SRL, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 2500.0
+Distributor: a0N8000000Ajer4EAB, Opportunity: Q4-FY24-CROSS SELL-COFIDE (NA), CloseDate: 2024-09-27, Area: SOLA - Peru, Amount: 15780.13
+Distributor: a0N3400000TSoUqEAL, Opportunity: Q4-FY24-Renewal-Dirección Nacional de Identificación Civil, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 13076.05
+Distributor: a0N3400000TSoUvEAL, Opportunity: Q4-FY24-Renewal-Banco Bica-CM-ARG2, CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 5289.38
+Distributor: a0N3400000LcbcZEAR, Opportunity: Q3-FY24-Renewal-Celsia SA ESP - ARGOS (Named/E/LPC) JULIAN PARDO, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 2951.41
+Distributor: a0N3400000LcbcZEAR, Opportunity: Q4-FY24-Renewal-Hospital Universitario Erasmo Meoz HUEM (Named/C/NAN), CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 3440.02
+Distributor: a0N3400000LcbcZEAR, Opportunity: Q4-FY24-Cross Sell-SDM (NAMED/G/FGR), CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 44356.31
+Distributor: a0N3400000Psy93EAB, Opportunity: COASMEDAS- SDWAN TELEFONICA, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 46385.52
+Distributor: a0N80000000XLwcEAG, Opportunity: SRB // Q3-2024- Renewal BNA -Fweb, CloseDate: 2024-09-27, Area: SOLA - Argentina, Amount: 15605.68
+Distributor: a0N3400000TSnDvEAL, Opportunity: GTD-Doite-FAZ, CloseDate: 2024-09-27, Area: SOLA - Chile, Amount: 13157.65
+Distributor: a0N3400000LcbceEAB, Opportunity: ACC_CC_PE - Win Empresas - Rico Pollo - Sede San Jose, CloseDate: 2024-09-27, Area: SOLA - Peru, Amount: 6174.0
+Distributor: a0N3400000TSoUvEAL, Opportunity: Q4-FY24-CROSS SELL-MRW-FAZ, CloseDate: 2024-09-27, Area: SOLA - Colombia, Amount: 4171.41
+Distributor: None, Opportunity: Q3-FY24-Renewal-Informática y Tecnología Stefanini, CloseDate: 2024-09-28, Area: SOLA - Colombia, Amount: 2574.0
+Distributor: a0N3400000LcbhyEAB, Opportunity: Caja de Compensación Los Andes - Red de Telefonia, CloseDate: 2024-09-29, Area: SOLA - Chile, Amount: 204790.08
+Distributor: None, Opportunity: TV Mas SpA-lic 200F, CloseDate: 2024-09-29, Area: SOLA - Chile, Amount: 19140.0
+Distributor: a0N3400000Psy93EAB, Opportunity: Stock - Cirion-TD-Synnex, CloseDate: 2024-09-29, Area: SOLA - Colombia, Amount: 113234.16
+Distributor: a0N3400000LcbcZEAR, Opportunity: SYNERJOY / FIREWALLS / CLARO, CloseDate: 2024-09-29, Area: SOLA - Colombia, Amount: 57504.15
+Distributor: None, Opportunity: Q3-FY24-Renewal-MUNICIPALIDAD PROVINCIAL DEL SANTA, CloseDate: 2024-09-29, Area: SOLA - Peru, Amount: 3712.46
+Distributor: a0N3400000TSoY9EAL, Opportunity: Q4FY24-Renewal-SUNARP, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 157938.72
+Distributor: a0N3400000LcbcjEAB, Opportunity: Q3 FY24 RNWL UMCE (5180252-1)/Innovanet/Adistec, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 4506.57
+Distributor: a0N3400000LcbceEAB, Opportunity: Q2FY24-Renewal-Orocom, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 11105.72
+Distributor: a0N3400000LcbhyEAB, Opportunity: PAM Bank of China, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 11160.0
+Distributor: a0N3400000LcbcjEAB, Opportunity: Entell Sell to - FW NOC, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 98797.4
+Distributor: a0N3400000LcbceEAB, Opportunity: Q2FY27-Renewal-WIN/Interbank Wifi, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 8502.45
+Distributor: a0N3400000Psy93EAB, Opportunity: Fondo Nacional de Garantías-Datasec-Synnex-Cloud, CloseDate: 2024-09-30, Area: SOLA - Colombia, Amount: 60579.576
+Distributor: a0N3400000LcbcjEAB, Opportunity: Entel Sell to - Wifi tiendas completo, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 527085.12
+Distributor: a0N3400000TSnDvEAL, Opportunity: TCCT_ESTADIO MUNICIPAL DE ANTOFAGASTA_SEGURIDAD, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 5455.3
+Distributor: None, Opportunity: Yanbal - Oficina Camelias ver1, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 14575.18
+Distributor: a0N3400000LcbceEAB, Opportunity: SMI - Fast Tech - FortiAnalyzer, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 22390.36
+Distributor: a0N3400000LcbcjEAB, Opportunity: TCCT_GREGORY ENERGY_SDWAN, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 3208.6
+Distributor: a0N3400000LcbceEAB, Opportunity: PROYECTO OT ELSE Sub Estaciones, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 264605.8
+Distributor: a0N3400000LcbcjEAB, Opportunity: TCCT_Maletas Chile SPA_SDWAN, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 68992.51
+Distributor: a0N800000069gpPEAQ, Opportunity: Radical_Radical_Servicios Deceptor opp 2, CloseDate: 2024-09-30, Area: SOLA - Ecuador, Amount: 34776.25
+Distributor: a0N3400000TSnDvEAL, Opportunity: TCCT_COMPASS CATERING SA_SDWAN, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 41668.07
+Distributor: a0N3400000LcbcjEAB, Opportunity: ENTEL - LICENCIAS MSSP, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 95000.0
+Distributor: a0N3400000LcbceEAB, Opportunity: METRO LINEA 2 - FG/Switches, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 215995.37
+Distributor: a0N30000000WGdSEAW, Opportunity: GRUPO PEÑAFLOR S.A.-Mendotec-FG-600F, CloseDate: 2024-09-30, Area: SOLA - Argentina, Amount: 24211.16
+Distributor: a0N8000000Ajer4EAB, Opportunity: GTD - KOBRANZAS SAC - EDR, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 28000.0
+Distributor: a0N3400000TSoY9EAL, Opportunity: Q1FY25-Renewal-UPN/Cloud, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 20583.31
+Distributor: a0N3400000LcbceEAB, Opportunity: Q3FY24-Renewal-Izipay Deceptor, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 6656.47
+Distributor: a0N3400000TSoUvEAL, Opportunity: FortiFlex (formerly Flex-VM) Billing-Consulting Services-2024-8, CloseDate: 2024-09-30, Area: SOLA - Argentina, Amount: 153.6
+Distributor: a0N30000000WGdSEAW, Opportunity: FortiFlex (formerly Flex-VM) Billing-eMozart-2024-8, CloseDate: 2024-09-30, Area: SOLA - Argentina, Amount: 150.54
+Distributor: a0N3400000LcbcUEAR, Opportunity: Q4-FY24-RNW-COORDINACIÓN ZONAL 9 | NN, CloseDate: 2024-09-30, Area: SOLA - Ecuador, Amount: 2022.41
+Distributor: a0N800000069gpPEAQ, Opportunity: NEW_SECOPS_EC ENT - Filtanet / Tipti / FortiMail, CloseDate: 2024-09-30, Area: SOLA - Ecuador, Amount: 13385.0
+Distributor: a0N3400000LcbcjEAB, Opportunity: DATCO CHILE S.A.-uso interno, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 19111.56
+Distributor: a0N3400000TSnEAEA1, Opportunity: Otecel /GIZLO SOLUCIONES EMPRESARIALES Y TECNOLOGICAS / FG, CloseDate: 2024-09-30, Area: SOLA - Ecuador, Amount: 35164.8
+Distributor: a0N2H000007lgX2UAI, Opportunity: Q4-FY24-RNW-Banco del Pacifico-CLARO | NN, CloseDate: 2024-09-30, Area: SOLA - Ecuador, Amount: 4956.0
+Distributor: a0N3400000TSoY9EAL, Opportunity: Entel - Verisure - Net Sec, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 10388.09
+Distributor: a0N2H00000VO1GxUAL, Opportunity: Q1-FY25-RNW-SOMAX, CloseDate: 2024-09-30, Area: SOLA - Colombia, Amount: 1170.15
+Distributor: a0N3400000LcbceEAB, Opportunity: Q3FY24-Renewal-SENATI 2200E, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 8778.65
+Distributor: a0N8000000Ajer4EAB, Opportunity: SCANIA - SEDE AREQUIPA, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 5596.11
+Distributor: None, Opportunity: Marval-EDR, Socaas-Varios, CloseDate: 2024-09-30, Area: SOLA - Colombia, Amount: 96535.23
+Distributor: a0N3400000TSoY4EAL, Opportunity: Q3-2024 RNW NUTRESA SENCINET FG600E, CloseDate: 2024-09-30, Area: SOLA - Colombia, Amount: 27096.91
+Distributor: a0N8000000Ajer4EAB, Opportunity: Q4FY24-Renewal-Grupo Okinawatec, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 49034.32
+Distributor: a0N3400000TSoY9EAL, Opportunity: Proyecto APs, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 11945.58
+Distributor: a0N3400000TSoY4EAL, Opportunity: GSE/ELLIPTICAL/FG Tunja, CloseDate: 2024-09-30, Area: SOLA - Colombia, Amount: 22453.2
+Distributor: a0N30000000WGdSEAW, Opportunity: Tea_Telefoncia Empresas - QRadar SIEM Displacement, CloseDate: 2024-09-30, Area: SOLA - Argentina, Amount: 203244.95
+Distributor: a0N3400000LcbceEAB, Opportunity: Hudbay - DC de Operaciones: FG+FSW, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 57033.56
+Distributor: a0N3400000LcbceEAB, Opportunity: Senati - FortiDDoS-200F + FSW-524D Upgrade, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 83653.5
+Distributor: None, Opportunity: ENT-FAE- ENLACES SDWAN 2024, CloseDate: 2024-09-30, Area: SOLA - Ecuador, Amount: 226521.8
+Distributor: a0N3400000LcbceEAB, Opportunity: Scotiabank_FG-201F_401F, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 25207.46
+Distributor: a0N3400000Psy93EAB, Opportunity: Q4-2024- Actualización Tecnológica - Cirion, CloseDate: 2024-09-30, Area: SOLA - Colombia, Amount: 14801.3
+Distributor: a0N3400000LcbceEAB, Opportunity: GTD - IS - LanEdge, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 24691.38
+Distributor: a0N3400000LcbcjEAB, Opportunity: DTS- FG 200F Enterprise FAZ, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 12810.86
+Distributor: a0N3400000LcbcZEAR, Opportunity: LN- Seguridad CONTENTO BPS S A-, CloseDate: 2024-09-30, Area: SOLA - Colombia, Amount: 36283.1
+Distributor: a0N3400000TSnDvEAL, Opportunity: GTD-Better Food, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 3000.0
+Distributor: a0N8000000Ajer4EAB, Opportunity: PetroPeru- ZTNA  Pre SASE, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 422.4
+Distributor: a0N8000000Ajer4EAB, Opportunity: NDR, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 85690.0
+Distributor: a0N3400000TSoY9EAL, Opportunity: TDP - Lucky - Forticloud, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 2313.3
+Distributor: a0N3400000LcbceEAB, Opportunity: BRADKEN PERU S.A.C - CONDOR NETWORK, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 11952.34
+Distributor: a0N3400000TSoY9EAL, Opportunity: TDP - SERVICIO PROFESIONAL INTEGRAL - FG-600F, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 28555.65
+Distributor: a0N3400000LcbceEAB, Opportunity: Win Empresas - ALFOSAC - FAD, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 5508.36
+Distributor: a0N3400000TSnDvEAL, Opportunity: TCCT_EMERGENT COLD CHILE_PROYECTO WI FI, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 14837.65
+Distributor: a0N3400000TSoY9EAL, Opportunity: Entel - Scharff - Secure SDWAN, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 65206.55
+Distributor: a0N3400000TSnE0EAL, Opportunity: IAPSER - Instituto Autarquico Provincial del Seguro de Entre Ríos- Druidics - FG-401F, CloseDate: 2024-09-30, Area: SOLA - Argentina, Amount: 43467.66
+Distributor: None, Opportunity: Corporacion Belcorp- FW 200F CO, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 15234.92
+Distributor: a0N2H000007lgX2UAI, Opportunity: ACC_SECOPS_EC_ENT-Telconet / Interagua / FSIEM MSSP  Sept, CloseDate: 2024-09-30, Area: SOLA - Ecuador, Amount: 1583.74
+Distributor: None, Opportunity: Dinet - LAN EDGE: Almacen Hiraoka - EKIS, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 11310.76
+Distributor: a0N3400000LcbceEAB, Opportunity: BBVA_FG-80POE, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 4926.38
+Distributor: a0N3400000LcbceEAB, Opportunity: Union Andina de Cemento UNACEM- Networking, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 337582.68
+Distributor: a0N3400000TSoY9EAL, Opportunity: LAP - FortiSIEM (Cybersoc) - Securesoft, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 24163.93
+Distributor: a0N3400000TSnDvEAL, Opportunity: TCCT_Municipalidad de Talagante_SEGURIDAD_SDWAN, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 32013.21
+Distributor: a0N8000000Ajer4EAB, Opportunity: TASA_FWs_FS, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 26613.62
+Distributor: a0N3400000LcbceEAB, Opportunity: U.Pichanaki_Networking, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 141207.6
+Distributor: None, Opportunity: BRIGHTCELL LOGISTICS COLOMBIA SAS- Cirion - TD-Synnex - 1era Instancia, CloseDate: 2024-09-30, Area: SOLA - Colombia, Amount: 39673.0
+Distributor: a0N8000000Ajer4EAB, Opportunity: TaiLoy_Switches_upsale, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 65126.4
+Distributor: a0N3400000Psy93EAB, Opportunity: Corporación universitaria autónoma del Cauca-GAMMA-TDSYNNEX-FW, CloseDate: 2024-09-30, Area: SOLA - Colombia, Amount: 19394.28
+Distributor: None, Opportunity: Union Andina de Cemento UNACEM- WIFI SAN ISIDRO CELELPSA, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 13149.0
+Distributor: a0N3400000TSnDvEAL, Opportunity: Q3 FY24 RNWL GTD (Cen|5310619-1/24M|5310410-1/36M)/GTD/Synnex, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 16771.34
+Distributor: a0N3400000LcbceEAB, Opportunity: ACC_CC_PE - Win Empresas - Agroindustrial Laredo - FortiPAM, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 3792.8
+Distributor: a0N3400000TSnDvEAL, Opportunity: ENTEL - VALTEK, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 2672.98
+Distributor: a0N3400000TSoUvEAL, Opportunity: Q3-FY24-RNW-HP MEDICAL-EMS, CloseDate: 2024-09-30, Area: SOLA - Colombia, Amount: 3148.26
+Distributor: a0N2H000007lgX2UAI, Opportunity: ACC_SASE_EC_ENT - Telconet / Interagua / SASE Add-on, CloseDate: 2024-09-30, Area: SOLA - Ecuador, Amount: 738.94
+Distributor: a0N3400000TSoUvEAL, Opportunity: Q3-FY24-CROSS SELL-ALIANZA SEGUROS, CloseDate: 2024-09-30, Area: SOLA - Colombia, Amount: 2868.88
+Distributor: a0N3400000TSoY9EAL, Opportunity: TDP - PROEMPRESA - FW Y ADC, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 38552.2
+Distributor: a0N3400000LcbcUEAR, Opportunity: Orizontel-Kullkiwasi- FG-FS, CloseDate: 2024-09-30, Area: SOLA - Ecuador, Amount: 15674.34
+Distributor: a0N3400000LcbcjEAB, Opportunity: [XSELLTELCOS] GTD-Reno - Secure Networking, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 3897.54
+Distributor: a0N3400000LcbceEAB, Opportunity: GTD - mssp FG50G, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 16115.5
+Distributor: a0N3400000TSnDvEAL, Opportunity: GTD - Movicenter, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 6362.74
+Distributor: a0N3400000LcbcUEAR, Opportunity: ORION Security - REGISTRO DE LA PROPIEDAD DE GUAYAQUIL - EDR, CloseDate: 2024-09-30, Area: SOLA - Ecuador, Amount: 13028.18
+Distributor: a0N3400000LcbcjEAB, Opportunity: Q3-FY24-RNW-INJUV (Named), CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 2222.08
+Distributor: None, Opportunity: Credinka - FAPs, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 6578.0
+Distributor: a0N3400000LcbcjEAB, Opportunity: GTD-MOTOROLA-LICENCIAS, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 1388.02
+Distributor: a0N3400000TSoUqEAL, Opportunity: Q3-FY24-RNW-LATU, CloseDate: 2024-09-30, Area: SOLA - Colombia, Amount: 2269.54
+Distributor: a0N3400000TSnDvEAL, Opportunity: Claro Sell to - One Core APN Service, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 6000.0
+Distributor: a0N3400000LcbcZEAR, Opportunity: Coopetrol-Datasec- Adistec-SW, CloseDate: 2024-09-30, Area: SOLA - Colombia, Amount: 16164.49
+Distributor: a0N800000069gpPEAQ, Opportunity: NEW_SASE_EC_ENT - Telconet / Interagua / SASE Interno, CloseDate: 2024-09-30, Area: SOLA - Ecuador, Amount: 35100.0
+Distributor: None, Opportunity: Xsell_TCCT_SUGAL_SDBRANCH, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 5603.85
+Distributor: a0N3400000LcbhyEAB, Opportunity: Q3 FY24 RNWL ClaroVTR-EA (5185881-1)/Claro Dacas, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 31200.0
+Distributor: a0N3400000LcbcjEAB, Opportunity: Q3-FY24-RNWL-Sernageomin/GTD/Adistec, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 9736.99
+Distributor: a0N3400000Psy93EAB, Opportunity: Q3-2024-Renewal-ESAP (Named/E/FZA), CloseDate: 2024-09-30, Area: SOLA - Colombia, Amount: 14133.69
+Distributor: a0N3400000Psy93EAB, Opportunity: Q3-2024-Renewal-GAMMA INGENIEROS-CARLOS BURGOS, CloseDate: 2024-09-30, Area: SOLA - Colombia, Amount: 792.708
+Distributor: a0N3400000LcbhyEAB, Opportunity: Q3-FY24-RNWL-Universidad de Chile/IT TRUST/Dacas, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 9419.13
+Distributor: None, Opportunity: Q3-2024-Renewal-Municipio de Yumbo, CloseDate: 2024-09-30, Area: SOLA - Colombia, Amount: 6890.0
+Distributor: a0N3400000LcbcZEAR, Opportunity: Q3-2024-Renewal-Agencia de Renovacion del Territorio - (Gov-DR) NAMED ACCOUNT, CloseDate: 2024-09-30, Area: SOLA - Colombia, Amount: 77225.76
+Distributor: a0N3400000TSnDvEAL, Opportunity: ENTEL_SYSTECH, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 16804.08
+Distributor: a0N3400000LcbhyEAB, Opportunity: Banco de Chile- Firewall CORE Banco de Chile, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 21163.71
+Distributor: a0N3400000TSnDvEAL, Opportunity: ENTEL_CENTRO_BLANCO, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 17773.56
+Distributor: a0N3400000TSoY4EAL, Opportunity: Emergent Cold-Switches, Aps-Ovni-Polar, CloseDate: 2024-09-30, Area: SOLA - Colombia, Amount: 46351.42
+Distributor: a0N3400000TSoY4EAL, Opportunity: Emergent Cold-Switches, Aps-Ovni-Funza, CloseDate: 2024-09-30, Area: SOLA - Colombia, Amount: 37376.7
+Distributor: a0N3400000LcbhyEAB, Opportunity: Maestranza Diesel- FAZ ZTNA, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 26334.0
+Distributor: a0N3400000LcbcjEAB, Opportunity: TCCT_Securitas Chile S.A._ SDWAN_SEGURIDAD, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 35815.86
+Distributor: a0N3400000LcbceEAB, Opportunity: Win Empresas - Pandero - FG, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 14576.0
+Distributor: a0N3400000Psy93EAB, Opportunity: SEGUROS DEL ESTADO- PROYECTO TOTAL SEGURIDAD + NETWORKING, CloseDate: 2024-09-30, Area: SOLA - Colombia, Amount: 520111.08
+Distributor: a0N3400000LcbcjEAB, Opportunity: TCCT_ILUSTRE MUNICIPALIDAD DE PUNITAQUI_SDWAN_SEGURIDAD, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 4656.96
+Distributor: a0N3400000TSoY4EAL, Opportunity: TLF Electro Meta RED OT, CloseDate: 2024-09-30, Area: SOLA - Colombia, Amount: 235047.68
+Distributor: a0N3400000TSoY9EAL, Opportunity: ATENTO - NOOVUS - FWs, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 33291.74
+Distributor: a0N3400000LcbceEAB, Opportunity: CMH - FG OT - Fase 2 (4 nuevas Sedes), CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 21889.46
+Distributor: a0N3400000TSoUvEAL, Opportunity: EMZT - PJ de Cordoba - VM adicional + SAT, CloseDate: 2024-09-30, Area: SOLA - Argentina, Amount: 35511.3
+Distributor: a0N3400000LcbcjEAB, Opportunity: TCCT_SERVICIO DE SALUD IQUIQUE, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 27345.15
+Distributor: a0N2H000007lgX7UAI, Opportunity: CROSSELL/ SIES / EYC, CloseDate: 2024-09-30, Area: SOLA - Colombia, Amount: 8404.01
+Distributor: a0N3400000LcbcjEAB, Opportunity: SOPROLE_GTD_ADISTEC_SDWAN, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 704109.54
+Distributor: a0N3400000TSnDvEAL, Opportunity: Caja de Compensación Los Andes- RFP SDWAN Fortinet, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 502164.12
+Distributor: a0N3400000TSoY9EAL, Opportunity: BANTEL - FW IPTV, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 37264.61
+Distributor: a0N8000000Ajer4EAB, Opportunity: GTD - Tráfico Seguro, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 155056.32
+Distributor: a0N3400000LcbcjEAB, Opportunity: TCCT_Compañia Portuaria Mejilones_SDWAN, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 4727.62
+Distributor: a0N3400000LcbceEAB, Opportunity: Senati - FortiWeb cloud, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 75456.0
+Distributor: a0N3400000LcbceEAB, Opportunity: Q2-FY24-RNW-EPS Tacna S.A., CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 1843.02
+Distributor: a0N3400000LcbcjEAB, Opportunity: Entel Sell to - Firewall perimetral NOC, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 24562.49
+Distributor: a0N3400000LcbhyEAB, Opportunity: AFC Chile - Logicalis - ZTNA MFA, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 8417.2
+Distributor: a0N3400000TSoUvEAL, Opportunity: AM // Q3-2024-Renewal-Municipalidad de Vicente Lopez, CloseDate: 2024-09-30, Area: SOLA - Argentina, Amount: 24496.2
+Distributor: a0N8000000Ajer4EAB, Opportunity: Q3FY24-Renewal-Confianza_FortiClient, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 6905.8
+Distributor: a0N3400000TSoUvEAL, Opportunity: AM // Q3-2024-Renewal-International Health Services Argentina S.A., CloseDate: 2024-09-30, Area: SOLA - Argentina, Amount: 15774.68
+Distributor: a0N3400000LcbceEAB, Opportunity: JOCKEY - DataCenter ADD ON, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 50827.21
+Distributor: a0N3400000LcbcjEAB, Opportunity: TCCT_MANNHEIM S.A_SDWAN, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 36479.52
+Distributor: a0N3400000TSoY9EAL, Opportunity: TDP - Laive - FG-200F, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 6522.12
+Distributor: a0N3400000Psy93EAB, Opportunity: SOAR ISA - PC, CloseDate: 2024-09-30, Area: SOLA - Colombia, Amount: 87948.9
+Distributor: a0N3400000LcbhyEAB, Opportunity: TCCT_SACYR CHILE S.A.-_ SDWAN, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 7334.76
+Distributor: a0N30000000WGdSEAW, Opportunity: ASOCIACION MUTUAL SANCOR SALUD- Telecom - Recambio Global FAP + FS, CloseDate: 2024-09-30, Area: SOLA - Argentina, Amount: 69935.65
+Distributor: a0N3400000TSnDvEAL, Opportunity: Q2 FY24 RNWL  CCU (5075212-1)/Entel/Synnex, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 24137.86
+Distributor: a0N3400000LcbcjEAB, Opportunity: TCCT_FORTIFLEX_MSSP, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 0.9
+Distributor: a0N3400000TSoUvEAL, Opportunity: Falabella - Tiendas PH y LM, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 4914.0
+Distributor: a0N3400000LcbceEAB, Opportunity: Q1-FY25-RNW-Linea Amarilla S.A.C., CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 3023.35
+Distributor: None, Opportunity: Clinicas del cobre -  Forticlient, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 23493.12
+Distributor: a0N3400000LcbceEAB, Opportunity: MRE - Plataforma ciberseguridad FTNT Fabric, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 494245.9
+Distributor: a0N3400000LcbcjEAB, Opportunity: TCCT_VALVERDE NORAMBUENA SPA_SDWAN, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 8280.0
+Distributor: a0N3400000TSnDvEAL, Opportunity: ACC_CC_CL_Arauco - NTT FG100f OT (bioenergia Nueva Aldea) (2X100F Stock), CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 10619.1
+Distributor: a0N8000000Ajer4EAB, Opportunity: GRUPO ROMERO – EXCELLIA- SDWAN, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 475997.5
+Distributor: a0N3400000LcbcZEAR, Opportunity: Auteco- claro _ EDR +EPP  ZTNA, CloseDate: 2024-09-30, Area: SOLA - Colombia, Amount: 71450.0
+Distributor: a0N3400000TSnEAEA1, Opportunity: SP Telconet | CERT | Refresh FG1500D DC, CloseDate: 2024-09-30, Area: SOLA - Ecuador, Amount: 219406.0
+Distributor: a0N3400000TSoY4EAL, Opportunity: Loteria de Medellin - Benedan- TechRefresh ver1, CloseDate: 2024-09-30, Area: SOLA - Colombia, Amount: 105193.88
+Distributor: a0N3400000TSnEAEA1, Opportunity: ENT Consulmatica / Almacenes Eljuri / FG Datacenter, CloseDate: 2024-09-30, Area: SOLA - Ecuador, Amount: 5781.0
+Distributor: a0N3400000LcbcjEAB, Opportunity: TCCT_Pares y Alvarez Ingenería_SEGURIDAD_SDWAN, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 35366.04
+Distributor: a0N3400000LcbcZEAR, Opportunity: Grupo ISA: XM S.A. E.S.P.-WAF ver1, CloseDate: 2024-09-30, Area: SOLA - Colombia, Amount: 64782.0
+Distributor: a0N3400000TSoY4EAL, Opportunity: MOVIDIC_SENCINET_DACAS_(SDWAN)_COL, CloseDate: 2024-09-30, Area: SOLA - Colombia, Amount: 33772.87
+Distributor: a0N3400000LcbceEAB, Opportunity: JOCKEY PLAZA - Forti EDR, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 34625.0
+Distributor: None, Opportunity: IMEL - Switches FG Gymsa, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 13956.8
+Distributor: a0N8000000Ajer4EAB, Opportunity: Grupo Falabella -Renovaciones Refresh ver1, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 99061.2
+Distributor: a0N3400000TSoUvEAL, Opportunity: Farmacias Peruanas - TITAN FAZ+200F, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 37034.79
+Distributor: a0N3400000TSoUvEAL, Opportunity: BCP_TACAs, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 22891.9
+Distributor: a0N3400000LcbceEAB, Opportunity: MOVILB-Zentury-WAF, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 13420.0
+Distributor: a0N3400000LcbceEAB, Opportunity: GTD - MSSP  STLINK, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 3415.5
+Distributor: a0N3400000LcbcZEAR, Opportunity: Q3-FY24-RNW-BOLSA-W40 SEPTIEMBRE, CloseDate: 2024-09-30, Area: SOLA - Colombia, Amount: 2527.0
+Distributor: a0N3400000TSnDvEAL, Opportunity: Minera San Geronimo - Road Map OT, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 9324.0
+Distributor: a0N3400000TSnDvEAL, Opportunity: ENTEL - TRICOLOR, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 116456.36
+Distributor: a0N3400000LcbceEAB, Opportunity: FAPE-Switches Videovigilancia, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 42849.95
+Distributor: a0N8000000Ajer4EAB, Opportunity: ACC_CC_PE_Hayduk: FortiRecon - EKIS, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 23205.0
+Distributor: a0N3400000LcbhyEAB, Opportunity: UFRO FortiVoice GTD-Agnov, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 38814.94
+Distributor: a0N3400000TSnDvEAL, Opportunity: Q3-FY24-RNW-Maltexco, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 6159.58
+Distributor: a0N3400000LcbceEAB, Opportunity: Q3-FY24-Renewal-PMP HOLDING, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 4337.61
+Distributor: a0N3400000Psy93EAB, Opportunity: Q3-FY24-RNW-GERLEINCO S.A, CloseDate: 2024-09-30, Area: SOLA - Colombia, Amount: 4383.38
+Distributor: a0N3400000TSnDvEAL, Opportunity: ENTEL - 252596 EULEN, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 23826.0
+Distributor: a0N3400000TSnDvEAL, Opportunity: ENTEL - 70810195 - CENTRO IMAGENSALUD, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 16670.75
+Distributor: a0N3400000TSoUvEAL, Opportunity: Q4-FY24-Renewal-San Cristóbal Seguros (Named Account), CloseDate: 2024-09-30, Area: SOLA - Argentina, Amount: 5488.56
+Distributor: a0N3400000LcbhyEAB, Opportunity: Q3-FY24-RNW-Pontificia Universidad Católica de Chile (Named), CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 5801.6
+Distributor: a0N3400000TSoUqEAL, Opportunity: Q3-FY24-RNW-BOLSA-URUDATA, CloseDate: 2024-09-30, Area: SOLA - Colombia, Amount: 4500.0
+Distributor: a0N3400000Psy93EAB, Opportunity: Q3-FY24-Renewal-Superintendencia de la Economia Solidaria (NAMED/G/JM), CloseDate: 2024-09-30, Area: SOLA - Colombia, Amount: 27343.84
+Distributor: None, Opportunity: Q3-FY24-Renewal-KROTON SAC, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 4667.01
+Distributor: a0N3400000TSoUvEAL, Opportunity: Q3-FY24-Renewal-Fabrica de Aviones Brigadier San Martin S.A. (FAdeA), CloseDate: 2024-09-30, Area: SOLA - Argentina, Amount: 12214.28
+Distributor: a0N3400000Psy93EAB, Opportunity: QUALA/GAMMA/NAC, CloseDate: 2024-09-30, Area: SOLA - Colombia, Amount: 56648.61
+Distributor: a0N3400000LcbhyEAB, Opportunity: ClaroVTR_Acciona_SDWAN_ZTNA, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 24000.0
+Distributor: a0N3400000TSoUvEAL, Opportunity: Q3-FY24-Renewal-Consulting Services, CloseDate: 2024-09-30, Area: SOLA - Argentina, Amount: 735.0
+Distributor: a0N3400000TSoY9EAL, Opportunity: Q3-FY24-Renewal-Universidad Privada del Norte (NA), CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 1120.056
+Distributor: a0N8000000Ajer4EAB, Opportunity: KALLPA - CCTV OT Plant - SD Branch, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 18671.15
+Distributor: None, Opportunity: ETB Forti APs, CloseDate: 2024-09-30, Area: SOLA - Colombia, Amount: 16000.3
+Distributor: a0N3400000TSoY9EAL, Opportunity: TDP - America TV - SIEM, CloseDate: 2024-09-30, Area: SOLA - Peru, Amount: 15735.87
+Distributor: a0N3400000LcbcjEAB, Opportunity: TCCT_CAF CHILE_ FG +FAZ VIRTUAL, CloseDate: 2024-09-30, Area: SOLA - Chile, Amount: 5496.3

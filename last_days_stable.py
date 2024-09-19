@@ -133,7 +133,7 @@ def get_opportunities_from_sfdc(sf):
 
     # Debug: Print each opportunity to track if 2024-09-30 is included
     for opp in opportunities:
-        print_err(f"Distributor: {opp['Distributor__c']}, Opportunity: {opp['Name']}, CloseDate: {opp['CloseDate']}, Area: {opp['Owner_Area__c']}, Amount: {opp['Amount']}")
+        print_err(f"Opportunity: {opp['Name']}, CloseDate: {opp['CloseDate']}, Area: {opp['Owner_Area__c']}, Amount: {opp['Amount']}")
     
     return opportunities
 
