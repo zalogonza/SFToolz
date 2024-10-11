@@ -4,6 +4,7 @@ import subprocess
 from simple_salesforce import Salesforce
 import pandas as pd
 from openpyxl import load_workbook
+from openpyxl import Workbook
 from datetime import datetime, timedelta
 from collections import defaultdict
 import argparse
@@ -194,49 +195,6 @@ def process_opportunities(opportunities):
         })
 
     return weekly_data
-
-
-## Function to generate or update the Excel file
-#def generate_excel(weekly_data):
-#    start_of_week, last_day_of_q, quarter = get_current_quarter_dates()
-#    year = datetime.today().year
-#    filename = os.path.join(os.path.expanduser("~"), "Documents", f'Sales_Closing_Q{quarter}_{year}.xlsx')
-#
-#    try:
-#        writer = pd.ExcelWriter(filename, engine='openpyxl', mode='a', if_sheet_exists='replace') if os.path.exists(filename) else pd.ExcelWriter(filename, engine='openpyxl')
-#    except Exception as e:
-#        writer = pd.ExcelWriter(filename, engine='openpyxl')
-#    
-#    for week_number, areas in weekly_data.items():
-#        sheet_name = f"{datetime.today().strftime('%Y-%m-%d at %H%M')}"
-#        data = []
-#
-#        for area, opportunities in areas.items():
-#            for opp in opportunities:
-#                row = [
-#                    week_number,
-#                    area,
-#                    opp['Opportunity Name'],
-#                    opp['ForecastCategoryName'],
-#                    opp['Amount'],
-#                    opp['CloseDate'],
-#                    opp['Monday'],
-#                    opp['Tuesday'],
-#                    opp['Wednesday'],
-#                    opp['Thursday'],
-#                    opp['Friday'],
-#                    opp['Saturday'],
-#                    opp['Sunday'],
-#                    opp['Upside']
-#                ] 
-#                data.append(row)
-#
-#        df = pd.DataFrame(data, columns=[
-#            'Week Number', 'Area', 'Opportunity Name', 'ForecastCategoryName', 'Amount', 'CloseDate', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'Upside'
-#        ])
-#        df.to_excel(writer, sheet_name=sheet_name, index=False, startrow=writer.sheets[sheet_name].max_row if sheet_name in writer.sheets else 0, header=not writer.sheets)
-#
-#    writer.close()  # Use close() instead of save()
 
 # Función para generar o actualizar el archivo Excel
 def generate_excel(weekly_data):
