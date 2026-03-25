@@ -11,7 +11,7 @@ import argparse
 
 # Define multiplier variables
 mult_commit = 0.9
-mult_bestcase = 0.2
+mult_bestcase = 0.5
 mult_else = 0
 
 # Function to print to STDERR for debugging
@@ -22,8 +22,9 @@ def print_err(*args, **kwargs):
 def parse_arguments():
     parser = argparse.ArgumentParser(description='Process Salesforce data and filter by area.')
     parser.add_argument('--area', type=str, required=True, help='Filter opportunities where Area contains the specified string.')
+    parser.add_argument('--out', type=str, required=False, default=None, help='Path to the output Excel file. Defaults to ~/Documents/Sales_Closing_Q<quarter>_<year>.xlsx.')
     args = parser.parse_args()
-    return args.area
+    return args.area, args.out
 
 # Load environment variables from the .env file in $HOME/.sfdc
 def load_env_vars():
@@ -197,10 +198,14 @@ def process_opportunities(opportunities):
     return weekly_data
 
 # Función para generar o actualizar el archivo Excel
-def generate_excel(weekly_data):
+def generate_excel(weekly_data, out_path=None):
     start_of_week, last_day_of_q, quarter = get_current_quarter_dates()
     year = datetime.today().year
-    filename = os.path.join(os.path.expanduser("~"), "Documents", f'Sales_Closing_Q{quarter}_{year}.xlsx')
+
+    if out_path:
+        filename = os.path.expanduser(out_path)
+    else:
+        filename = os.path.join(os.path.expanduser("~"), "Documents", f'Sales_Closing_Q{quarter}_{year}.xlsx')
 
     # Verifica si el archivo existe; si no, crea uno nuevo
     if not os.path.exists(filename):
@@ -251,10 +256,10 @@ def generate_excel(weekly_data):
 if __name__ == "__main__":
     load_env_vars()
     sf = connect_to_salesforce()
-    area = parse_arguments()
+    area, out_path = parse_arguments()
     if sf:
         opportunities = get_opportunities_from_sfdc(sf)
         weekly_data = process_opportunities(opportunities)
-        generate_excel(weekly_data)
+        generate_excel(weekly_data, out_path)
 
 
